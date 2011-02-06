@@ -1,0 +1,5 @@
+pointArts           randomly draw points using random colors and sizes
+kaleidoscope		an imitation of the kaleidoscope
+signSTAT			a sign to denote ``STAT'' using arrows, polygons and circles, etc
+gradArrows1			demo for the gradient descent algorithm with several initial values (background by image())
+gradArrows2			demo for the gradient descent algorithm with several initial values (background by filled.contour(), looks better visually)

@@ -1,0 +1,15 @@
+Package: MSG
+Type: Package
+Title: Modern Statistical Graphics
+Version: 0.1-0
+Date: 2011-02-05
+Author: Yihui Xie
+Maintainer: Yihui Xie <xie@yihui.name>
+Description: A companion to the Chinese book ``Modern Statistical Graphics'' by Yihui Xie.
+License: GPL
+LazyLoad: yes
+Depends: animation, KernSmooth
+Imports: formatR
+Suggests: rgl, plotrix, aplpack, ggplot2, lattice, rggobi, iplots
+URL: http://yihui.name/cn/publication
+BugReports: https://github.com/yihui/MSG/issues
