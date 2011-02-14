@@ -8,8 +8,7 @@ Maintainer: Yihui Xie <xie@yihui.name>
 Description: A companion to the Chinese book ``Modern Statistical Graphics'' by Yihui Xie.
 License: GPL
 LazyLoad: yes
-Depends: animation, KernSmooth
-Imports: formatR
-Suggests: rgl, plotrix, aplpack, ggplot2, lattice, rggobi, iplots
+Imports: formatR, RColorBrewer
+Suggests: animation, KernSmooth, rgl, plotrix, aplpack, ggplot2, lattice, rggobi, iplots
 URL: http://yihui.name/cn/publication
 BugReports: https://github.com/yihui/MSG/issues
