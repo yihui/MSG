@@ -17,11 +17,8 @@
 ##'
 andrews_curve = function(x, n = 101, type = "l", lty = 1,
     lwd = 1, pch = NA, xlab = "t", ylab = "f(t)", ...) {
+    x = as.matrix(x)
     p = ncol(x)
-    if (is.null(p))
-        stop("'x' must be a matrix or data.frame!")
-    if (p < 1)
-        stop("'x' must have at least one column!")
     theta = matrix(seq(-pi, pi, length.out = n), nrow = n, ncol = 1)
     if (p == 1) {
         a = matrix(x/sqrt(2), nrow = n, ncol = nrow(x), byrow = TRUE)
