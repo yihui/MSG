@@ -13,7 +13,7 @@
 ##' @export
 ##' @examples
 ##'
-##' andrews.curve(iris[, -5], col = as.integer(iris[, 5]))
+##' andrews_curve(iris[, -5], col = as.integer(iris[, 5]))
 ##'
 andrews_curve = function(x, n = 101, type = "l", lty = 1,
     lwd = 1, pch = NA, xlab = "t", ylab = "f(t)", ...) {
