@@ -64,7 +64,7 @@ for (i in 1:20) {
     tmp = gradient(x, y, z, axes = FALSE, FUN = f2, rg = c(-0.8, 
         -0.8, 0.7, 2), init = c(lc$x[i], lc$y[i]), gamma = runif(1, 
         0.05, 0.15), tol = 1e-04, nmax = ceiling(runif(1, 5, 
-        30)), add = TRUE)
+        13)), add = TRUE)
     tmp0 = rbind(tmp0, tmp$root)
     tmp1 = c(tmp1, tmp$color)
 }
