@@ -9,7 +9,6 @@
 ##' @docType package
 ##' @author Yihui Xie <xie@@yihui.name>
 ##' @keywords package
-##' @importFrom formatR tidy.source
 ##' @importFrom RColorBrewer brewer.pal
 ##'
 NULL
