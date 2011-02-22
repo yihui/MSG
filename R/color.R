@@ -29,8 +29,8 @@ vec2col.default = function(vec, n, name) {
     if (missing(n)) n = 9
     if (missing(name)) name = 'Blues'
     idx = findInterval(vec, seq(min(vec, na.rm = TRUE), max(vec, na.rm = TRUE),
-                                length.out = n + 1))
-    brewer.pal(n, name)[as.integer(idx)]
+                                length.out = n))
+    brewer.pal(n, name)[idx]
 }
 ##' @method vec2col factor
 ##' @rdname vec2col
