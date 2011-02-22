@@ -4,3 +4,9 @@ signSTAT		a sign to denote ``STAT'' using arrows, polygons and circles, etc
 gradArrows1		demo for the gradient descent algorithm with several initial values (background by image())
 gradArrows2		demo for the gradient descent algorithm with several initial values (background by filled.contour(), looks better visually)
 hist_geyser		a polished histogram of the geyser data
+symbols_all		all the symbols in the function symbols()
+ChinaPop		symbols characterizing the Chinese population based on a contour plot
+AgriComp		agricultural competitiveness
+float_pie		floating pie charts in plotrix
+layout_margin		arrange histograms with a scatter plot to show marginal distributions
+mouse_move		a demo of mouse moving over a scatter plot
