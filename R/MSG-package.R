@@ -335,6 +335,7 @@ NULL
 ##' @name tvearn
 ##' @docType data
 ##' @keywords datasets
+##' @references \url{http://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
 ##' @examples data(tvearn)
 ##' plot(pay ~ rating, data=tvearn)
 ##' if (require('ggplot2')) {
