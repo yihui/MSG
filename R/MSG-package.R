@@ -329,3 +329,39 @@ NULL
 
 
 
+##' The scores of the game Canabalt from Twitter.
+##'
+##' @name canabalt
+##' @docType data
+##' @references
+##' \url{http://www.neilkodner.com/2011/02/visualizations-of-canabalt-scores-scraped-from-twitter/}
+##' @keywords datasets
+##' @examples if (require('ggplot2')) {
+##' data(canabalt)
+##' print(qplot(device,score,data=canabalt))
+##' print(qplot(reorder(death,score,median),score,data=canabalt,
+##' geom='boxplot')+coord_flip())
+##' }
+NULL
+
+
+##' Attributes of some music clips.
+##'
+##' @name music
+##' @docType data
+##' @references Cook D, Swayne DF (2007). Interactive and Dynamic
+##' Graphics for Data Analysis With R and GGobi. Springer. ISBN
+##' 978-0-387-71761-6.
+##' @keywords datasets
+##' @examples data(music)
+NULL
+
+
+##' Country power indicators of China vs America.
+##'
+##' @name cn_vs_us
+##' @docType data
+##' @references \url{http://www.guardian.co.uk/news/datablog/2011/jan/19/china-social-media}
+##' @keywords datasets
+##' @examples data(cn_vs_us)
+NULL
