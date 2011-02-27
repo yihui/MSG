@@ -397,3 +397,19 @@ NULL
 ##' qplot(rating,pay,data=tvearn,geom=c('jitter','smooth'),color=type)
 ##' }
 NULL
+
+
+##' Assists between players in CLE and LAL.
+##'
+##' The players in the rows assisted the ones in the columns.
+##' @name assists
+##' @docType data
+##' @keywords datasets
+##' @references \url{http://www.basketballgeek.com/data/}
+##' @examples data(assists)
+##'
+##' if (require('sna')) {
+##' set.seed(2011)
+##' gplot(table(x2,x1),displaylabels=TRUE,label.cex = .7)
+##' }
+NULL
