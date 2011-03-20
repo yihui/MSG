@@ -413,3 +413,43 @@ NULL
 ##' gplot(table(x2,x1),displaylabels=TRUE,label.cex = .7)
 ##' }
 NULL
+
+
+##' Earth quakes from 1973 to 2010.
+##'
+##' The time, location and magnitude of all the earth quakes with
+##' magnitude being greater than 6 since 1973.
+##' @name quake6
+##' @docType data
+##' @keywords datasets
+##' @references \url{http://cos.name/cn/topic/101510}
+##' @examples data(quake6)
+##'
+##' if (require('ggplot2')) {
+##' qplot(year, month, data = quake6) + stat_sum(aes(size = ..n..)) +
+##'     scale_size(to = c(1, 10))
+##' }
+NULL
+
+
+##' Composition of Soil from Murcia Province, Spain.
+##'
+##' The proportions of sand, silt and clay in soil samples are given
+##' for 8 contiguous sites. The sites extended over the crest and
+##' flank of a low rise in a valley underlain by marl near Albudeite
+##' in the province of Murcia, Spain. The sites were small areas of
+##' ground surface of uniform shape internally and delimited by
+##' relative discontinuities externally. Soil samples were obtained
+##' for each site at 11 random points within a 10m by 10m area centred
+##' on the mid-point of the site. All samples were taken from the same
+##' depth. The data give the sand, silt and clay content of each
+##' sample, expressed as a percentage of the total sand, silt and clay
+##' content.
+##' @name murcia
+##' @docType data
+##' @keywords datasets
+##' @references \url{http://www.statsci.org/data/general/murcia.html}
+##' @examples data(murcia)
+##' boxplot(sand~site,data=murcia)
+##'
+NULL
