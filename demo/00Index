@@ -12,3 +12,14 @@ layout_margin		arrange histograms with a scatter plot to show marginal distribut
 mouse_move		a demo of mouse moving over a scatter plot
 basketball		Cavaliers vs Lakers on Dec 25, 2009
 SongWordsNet		a network graph of 100 words in Song Poetry
+pointTypes		different point types (i.e. shapes)
+xsplineDemo		demo for X-splines
+alphaDemo		a demo to show alpha-transparency
+cdplotDemo		a demo for cdplot()
+contourPop		a contour plot of the data ChinaLifeEdu
+volcano			a filled contour plot of the volcano data
+editRect		edit a rectangle in grid graphics
+subplot			draw a sub-plot on a large plot to represent a local area
+princomp		a demo of PCA based on the rotation of viewport in grid
+eqMaps			maps for the earthquakes in Sichuan
+Napoleon		reproduce the graph by Minard
