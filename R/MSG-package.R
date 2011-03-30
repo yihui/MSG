@@ -410,7 +410,7 @@ NULL
 ##'
 ##' if (require('sna')) {
 ##' set.seed(2011)
-##' gplot(table(x2,x1),displaylabels=TRUE,label.cex = .7)
+##' gplot(assists,displaylabels=TRUE,label.cex = .7)
 ##' }
 NULL
 
