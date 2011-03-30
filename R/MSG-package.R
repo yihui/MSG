@@ -453,3 +453,14 @@ NULL
 ##' boxplot(sand~site,data=murcia)
 ##'
 NULL
+
+
+##' Longitude and latitude of earthquakes in the Sichuan Province.
+##'
+##' @name eq2010
+##' @docType data
+##' @keywords datasets
+##' @examples data(eq2010)
+##' plot(lat~long,data=eq2010)
+##'
+NULL
