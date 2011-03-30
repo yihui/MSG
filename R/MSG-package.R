@@ -22,9 +22,9 @@ NULL
 ##' See the example section for the code to generate the data.
 ##'
 ##' \subsection{Format}{A data frame with 20000 observations on the
-##' following 2 variables.  \describe{ \item{list("V1")}{the first
+##' following 2 variables.  \describe{ \item{V1}{the first
 ##' random variable with the x-axis coordinate of the circle}
-##' \item{list("V2")}{the second random variable with the y-axis
+##' \item{V2}{the second random variable with the y-axis
 ##' coordinate of the circle} }}
 ##'
 ##' \subsection{Source}{\url{http://yihui.name/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}}
@@ -56,7 +56,7 @@ NULL
 ##' # perspective plot by persp()
 ##' persp(fit$x1, fit$x2, fit$fhat)
 ##'
-##' if (require('rgl')) {
+##' if (interactive() && require('rgl')) {
 ##' # perspective plot by OpenGL
 ##' rgl.surface(fit$x1, fit$x2, fit$fhat)
 ##' # animation
@@ -83,8 +83,8 @@ NULL
 ##'
 ##' \subsection{Format}{A data frame with 31 observations on the
 ##' following 2 variables. \describe{
-##' \item{list("Life.Expectancy")}{Life expectancy}
-##' \item{list("High.Edu.NO")}{Number of people with higher education}
+##' \item{Life.Expectancy}{Life expectancy}
+##' \item{High.Edu.NO}{Number of people with higher education}
 ##' }}
 ##'
 ##' \subsection{Source}{China Statistical Yearbook 2005. National
@@ -111,9 +111,9 @@ NULL
 ##' Export of US and China from 1999 to 2004 in US dollars.
 ##'
 ##' \subsection{Format}{A data frame with 13 observations on the
-##' following 3 variables. \describe{ \item{list("Export")}{amount of
-##' export} \item{list("Year")}{year from 1999 to 2004}
-##' \item{list("Country")}{country: US or China} }}
+##' following 3 variables. \describe{ \item{Export}{amount of
+##' export} \item{Year}{year from 1999 to 2004}
+##' \item{Country}{country: US or China} }}
 ##'
 ##' \subsection{Source}{\url{http://stat.wto.org}}
 ##' @name Export.USCN
@@ -148,11 +148,11 @@ NULL
 ##' \samp{site:gov.cn}, e.g. to search for \samp{87.53% site:gov.cn}.
 ##'
 ##' \subsection{Format}{A data frame with 10000 observations on the
-##' following 4 variables.  \describe{ \item{list("percentage")}{a
-##' numeric vector: the percentages} \item{list("count")}{a numeric
+##' following 4 variables.  \describe{ \item{percentage}{a
+##' numeric vector: the percentages} \item{count}{a numeric
 ##' vector: the number of webpages corresponding to a certain
-##' percentage} \item{list("round0")}{a logical vector: rounded to
-##' integers?} \item{list("round1")}{a logical vector: rounded to the
+##' percentage} \item{round0}{a logical vector: rounded to
+##' integers?} \item{round1}{a logical vector: rounded to the
 ##' 1st decimal place?} }}
 ##'
 ##' \subsection{Source}{Google (date: 2009/12/17)}
@@ -216,8 +216,8 @@ NULL
 ##' For each altitude, the number of plants is recorded.
 ##'
 ##' \subsection{Format}{A data frame with 600 observations on the
-##' following 2 variables. \describe{ \item{list("altitude")}{altitude
-##' of the area} \item{list("counts")}{number of plants} }}
+##' following 2 variables. \describe{ \item{altitude}{altitude
+##' of the area} \item{counts}{number of plants} }}
 ##'
 ##' \subsection{Source}{
 ##' \url{http://cos.name/2008/11/lowess-to-explore-bivariate-correlation-by-yihui/}}
@@ -291,9 +291,9 @@ NULL
 ##'
 ##' \subsection{Format}{ A data frame with 10000 observations on the
 ##' following 3 variables.  \describe{
-##' \item{list("pvalue.t")}{P-values of t test}
-##' \item{list("pvalue.w")}{P-values of Wilcoxon test}
-##' \item{list("count")}{Tukey's counts} }}
+##' \item{pvalue.t}{P-values of t test}
+##' \item{pvalue.w}{P-values of Wilcoxon test}
+##' \item{count}{Tukey's counts} }}
 ##'
 ##' \subsection{Source}{Simulation; see the Examples section below.}
 ##' @name tukeyCount
