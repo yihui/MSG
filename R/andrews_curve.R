@@ -1,5 +1,4 @@
 ##' Draw Andrew's Curve.
-##'
 ##' @param x a data frame or matrix
 ##' @param n number of x-axis values at which f(t) is evaluated
 ##' @param type,lty,lwd,pch,xlab,ylab,... passed to
@@ -11,10 +10,7 @@
 ##' @references
 ##' \url{http://fedc.wiwi.hu-berlin.de/xplore/tutorials/mvahtmlnode9.html}
 ##' @export
-##' @examples
-##'
-##' andrews_curve(iris[, -5], col = as.integer(iris[, 5]))
-##'
+##' @examples andrews_curve(iris[, -5], col = as.integer(iris[, 5]))
 andrews_curve = function(x, n = 101, type = "l", lty = 1,
     lwd = 1, pch = NA, xlab = "t", ylab = "f(t)", ...) {
     x = as.matrix(x)
@@ -35,4 +31,3 @@ andrews_curve = function(x, n = 101, type = "l", lty = 1,
     colnames(a) = rownames(x)
     invisible(t(a))
 }
-

@@ -1,4 +1,4 @@
-##' Generate a matrix of similar characters.
+##' Generate a matrix of similar characters
 ##'
 ##' This function prints a matrix of characters which are very similar
 ##' to each other.
@@ -12,7 +12,6 @@
 ##' char_gen()
 ##'
 ##' char_gen(c('O', 'Q'))
-##'
 char_gen = function(x = c("V", "W"), n = 300, nrow = 10) {
     cat(apply(matrix(sample(c(x[1], rep(x[2], n - 1))),
         nrow), 1, paste, collapse = ""), sep = "\n")

@@ -1,39 +1,33 @@
-##' Modern Statistical Graphics.
-##' Datasets and functions for the Chinese book ``Modern Statistical Graphics''.
+##' Modern Statistical Graphics
 ##'
-##' \tabular{ll}{ Package: \tab MSG\cr Type: \tab Package\cr License:
-##' \tab GPL\cr LazyLoad: \tab yes\cr }
-##'
+##' Datasets and functions for the Chinese book ``Modern Statistical
+##' Graphics''.
 ##' @name MSG-package
 ##' @aliases MSG-package MSG
 ##' @docType package
-##' @author Yihui Xie <xie@@yihui.name>
+##' @author Yihui Xie <\url{http://yihui.name}>
 ##' @keywords package
 ##' @importFrom RColorBrewer brewer.pal
-##'
 NULL
 
 
-##' Random numbers containing a ``circle''.
-##' The data was generated from two independent random varialbes (standard
-##' Normal distribution) and further points on a circle were added to the data.
-##' The order of the data was randomized.
+##' Random numbers containing a ``circle''
+##'
+##' The data was generated from two independent random varialbes
+##' (standard Normal distribution) and further points on a circle were
+##' added to the data. The order of the data was randomized.
 ##'
 ##' See the example section for the code to generate the data.
 ##'
-##' \subsection{Format}{A data frame with 20000 observations on the
-##' following 2 variables.  \describe{ \item{V1}{the first
-##' random variable with the x-axis coordinate of the circle}
-##' \item{V2}{the second random variable with the y-axis
-##' coordinate of the circle} }}
+##' @format A data frame with 20000 observations on the following 2
+##' variables.  \describe{ \item{V1}{the first random variable with
+##' the x-axis coordinate of the circle} \item{V2}{the second random
+##' variable with the y-axis coordinate of the circle} }
 ##'
-##' \subsection{Source}{\url{http://yihui.name/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}}
+##' @source \url{http://yihui.name/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}
 ##' @name BinormCircle
 ##' @docType data
-##' @keywords datasets
-##' @examples
-##'
-##' data(BinormCircle)
+##' @examples data(BinormCircle)
 ##'
 ##' ## original plot: cannot see anything
 ##' plot(BinormCircle)
@@ -72,28 +66,25 @@ NULL
 ##' y2 = rep(0.5 * sin(seq(0, 2 * pi, length = 500)), 20)
 ##' x = cbind(c(x1, x2), c(y1, y2))
 ##' BinormCircle = as.data.frame(round(x[sample(20000), ], 3))
-##'
 NULL
 
 
-##' Life Expectancy and the Number of People with Higher Education in China (2005).
+##' Life Expectancy and the Number of People with Higher Education in
+##' China (2005)
 ##'
-##' This data contains the life expectancy and number of people with higher
-##' education in the 31 provinces and districts in China (2005).
+##' This data contains the life expectancy and number of people with
+##' higher education in the 31 provinces and districts in China
+##' (2005).
 ##'
-##' \subsection{Format}{A data frame with 31 observations on the
-##' following 2 variables. \describe{
-##' \item{Life.Expectancy}{Life expectancy}
-##' \item{High.Edu.NO}{Number of people with higher education}
-##' }}
+##' @format A data frame with 31 observations on the following 2
+##' variables. \describe{ \item{Life.Expectancy}{Life expectancy}
+##' \item{High.Edu.NO}{Number of people with higher education} }
 ##'
-##' \subsection{Source}{China Statistical Yearbook 2005. National
-##' Bureau of Statistics.}
+##' @source China Statistical Yearbook 2005. National Bureau of
+##' Statistics.
 ##' @name ChinaLifeEdu
 ##' @docType data
-##' @keywords datasets
 ##' @examples
-##'
 ##' data(ChinaLifeEdu)
 ##' x = ChinaLifeEdu
 ##' plot(x, type = "n", xlim = range(x[, 1]), ylim = range(x[, 2]))
@@ -104,23 +95,18 @@ NULL
 ##' est = bkde2D(x, apply(x, 2, dpik))
 ##' contour(est$x1, est$x2, est$fhat, nlevels = 15, col = "darkgreen",
 ##'     add = TRUE, vfont = c("sans serif", "plain"))
-##'
 NULL
 
 
-##' Export of US and China from 1999 to 2004 in US dollars.
-##'
-##' \subsection{Format}{A data frame with 13 observations on the
+##' Export of US and China from 1999 to 2004 in US dollars
+##' @format A data frame with 13 observations on the
 ##' following 3 variables. \describe{ \item{Export}{amount of
 ##' export} \item{Year}{year from 1999 to 2004}
-##' \item{Country}{country: US or China} }}
-##'
-##' \subsection{Source}{\url{http://stat.wto.org}}
+##' \item{Country}{country: US or China} }
+##' @source \url{http://stat.wto.org}
 ##' @name Export.USCN
 ##' @docType data
-##' @keywords datasets
 ##' @examples
-##'
 ##' data(Export.USCN)
 ##' par(mar = c(4, 4.5, 1, 4.5))
 ##' plot(1:13, Export.USCN$Export, xlab = "Year / Country",
@@ -136,31 +122,27 @@ NULL
 ##' axis(4, at = ylabel/8.27, labels = ylabel)
 ##' mtext("Chinese RMB", side = 4, line = 2)
 ##' box()
-##'
 NULL
 
 
-##' Percentage data in Chinese government websites.
-##' This data was collected from Google by searching for percentages in Chinese
-##' goverment websites.
+##' Percentage data in Chinese government websites
 ##'
-##' We can specify the domain when searching in Google. For this data, we used
-##' \samp{site:gov.cn}, e.g. to search for \samp{87.53% site:gov.cn}.
+##' This data was collected from Google by searching for percentages
+##' in Chinese goverment websites.
 ##'
-##' \subsection{Format}{A data frame with 10000 observations on the
-##' following 4 variables.  \describe{ \item{percentage}{a
-##' numeric vector: the percentages} \item{count}{a numeric
-##' vector: the number of webpages corresponding to a certain
-##' percentage} \item{round0}{a logical vector: rounded to
-##' integers?} \item{round1}{a logical vector: rounded to the
-##' 1st decimal place?} }}
-##'
-##' \subsection{Source}{Google (date: 2009/12/17)}
+##' We can specify the domain when searching in Google. For this data,
+##' we used \samp{site:gov.cn}, e.g. to search for \samp{87.53\%
+##' site:gov.cn}.
+##' @format A data frame with 10000 observations on the following 4
+##' variables.  \describe{ \item{percentage}{a numeric vector: the
+##' percentages} \item{count}{a numeric vector: the number of webpages
+##' corresponding to a certain percentage} \item{round0}{a logical
+##' vector: rounded to integers?} \item{round1}{a logical vector:
+##' rounded to the 1st decimal place?} }
+##' @source Google (date: 2009/12/17)
 ##' @name gov.cn.pct
 ##' @docType data
-##' @keywords datasets
 ##' @examples
-##'
 ##' data(gov.cn.pct)
 ##' pct.lowess = function(cond) {
 ##'     with(gov.cn.pct, {
@@ -208,24 +190,20 @@ NULL
 ##'         lwd = 2)
 ##' })
 ##' }
-##'
 NULL
 
 
-##' Number of plants corresponding to altitude.
+##' Number of plants corresponding to altitude
+##'
 ##' For each altitude, the number of plants is recorded.
-##'
-##' \subsection{Format}{A data frame with 600 observations on the
-##' following 2 variables. \describe{ \item{altitude}{altitude
-##' of the area} \item{counts}{number of plants} }}
-##'
-##' \subsection{Source}{
-##' \url{http://cos.name/2008/11/lowess-to-explore-bivariate-correlation-by-yihui/}}
+##' @format A data frame with 600 observations on the following 2
+##' variables. \describe{ \item{altitude}{altitude of the area}
+##' \item{counts}{number of plants} }
+##' @source
+##' \url{http://cos.name/2008/11/lowess-to-explore-bivariate-correlation-by-yihui/}
 ##' @name PlantCounts
 ##' @docType data
-##' @keywords datasets
 ##' @examples
-##'
 ##' ## different span for LOWESS
 ##' data(PlantCounts)
 ##' par(las = 1, mar = c(4, 4, 0.1, 0.1), mgp = c(2.2, 0.9, 0))
@@ -237,26 +215,24 @@ NULL
 ##'             0), lwd = 1.5)
 ##'     }
 ##' })
-##'
 NULL
 
 
-##' The differences of P-values in t test assuming equal or unequal variances.
+##' The differences of P-values in t test assuming equal or unequal
+##' variances
+##'
 ##' Given that the variances of two groups are unequal, we compute the
 ##' difference of P-values assuming equal or unequal variances
 ##' respectively by simulation.
 ##'
 ##' See the Examples section for the generation of this data.
-##'
-##' \subsection{Source}{By simulation.}
-##'
-##' \subsection{Format}{A data frame with 1000 rows and 99 columns.}
+##' @source By simulation.
+##' @format A data frame with 1000 rows and 99 columns.
 ##' @name t.diff
 ##' @docType data
 ##' @references Welch B (1947). ``The generalization of Student's
 ##' problem when several different population variances are
 ##' involved.'' Biometrika, 34(1/2), 28--35.
-##' @keywords datasets
 ##' @examples
 ##' data(t.diff)
 ##' boxplot(t.diff, axes = FALSE, xlab = expression(n[1]))
@@ -279,31 +255,26 @@ NULL
 ##' t.diff = as.data.frame(t(t.diff))
 ##' colnames(t.diff) = 2:100
 ##' }
-##'
 NULL
 
 
-##' Results of a Simulation to Tukey's Fast Test.
-##' For the test of means of two samples, we calculated the P-values and
-##' recorded the counts of Tukey's rule of thumb.
+##' Results of a Simulation to Tukey's Fast Test
+##'
+##' For the test of means of two samples, we calculated the P-values
+##' and recorded the counts of Tukey's rule of thumb.
 ##'
 ##' See the reference for details.
-##'
-##' \subsection{Format}{ A data frame with 10000 observations on the
-##' following 3 variables.  \describe{
-##' \item{pvalue.t}{P-values of t test}
-##' \item{pvalue.w}{P-values of Wilcoxon test}
-##' \item{count}{Tukey's counts} }}
-##'
-##' \subsection{Source}{Simulation; see the Examples section below.}
+##' @format A data frame with 10000 observations on the following 3
+##' variables.  \describe{ \item{pvalue.t}{P-values of t test}
+##' \item{pvalue.w}{P-values of Wilcoxon test} \item{count}{Tukey's
+##' counts} }
+##' @source Simulation; see the Examples section below.
 ##' @name tukeyCount
 ##' @docType data
 ##' @references D. Daryl Basler and Robert B. Smawley. Tukey's Compact
 ##' versus Classic Tests. \emph{The Journal of Experimental
 ##' Education}, Vol. 36, No.  3 (Spring, 1968), pp. 86-88
-##' @keywords datasets
 ##' @examples
-##'
 ##' data(tukeyCount)
 ##'
 ##' ## does Tukey's rule of thumb agree with t test and Wilcoxon test?
@@ -340,18 +311,15 @@ NULL
 ##' colnames(tukeyCount) = c("pvalue.t", "pvalue.w", "count")
 ##'
 ##' }
-##'
 NULL
 
 
 
-##' The scores of the game Canabalt from Twitter.
-##'
+##' The scores of the game Canabalt from Twitter
 ##' @name canabalt
 ##' @docType data
 ##' @references
 ##' \url{http://www.neilkodner.com/2011/02/visualizations-of-canabalt-scores-scraped-from-twitter/}
-##' @keywords datasets
 ##' @examples if (require('ggplot2')) {
 ##' data(canabalt)
 ##' print(qplot(device,score,data=canabalt))
@@ -361,34 +329,29 @@ NULL
 NULL
 
 
-##' Attributes of some music clips.
-##'
+##' Attributes of some music clips
 ##' @name music
 ##' @docType data
 ##' @references Cook D, Swayne DF (2007). Interactive and Dynamic
 ##' Graphics for Data Analysis With R and GGobi. Springer. ISBN
 ##' 978-0-387-71761-6.
-##' @keywords datasets
 ##' @examples data(music)
 NULL
 
 
-##' Country power indicators of China vs America.
-##'
+##' Country power indicators of China vs America
 ##' @name cn_vs_us
 ##' @docType data
 ##' @references \url{http://www.guardian.co.uk/news/datablog/2011/jan/19/china-social-media}
-##' @keywords datasets
 ##' @examples data(cn_vs_us)
 NULL
 
 
-##' Top TV earners.
+##' Top TV earners
 ##'
 ##' The pay per episode for actors as well as other information.
 ##' @name tvearn
 ##' @docType data
-##' @keywords datasets
 ##' @references \url{http://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
 ##' @examples data(tvearn)
 ##' plot(pay ~ rating, data=tvearn)
@@ -399,12 +362,11 @@ NULL
 NULL
 
 
-##' Assists between players in CLE and LAL.
+##' Assists between players in CLE and LAL
 ##'
 ##' The players in the rows assisted the ones in the columns.
 ##' @name assists
 ##' @docType data
-##' @keywords datasets
 ##' @references \url{http://www.basketballgeek.com/data/}
 ##' @examples data(assists)
 ##'
@@ -415,13 +377,12 @@ NULL
 NULL
 
 
-##' Earth quakes from 1973 to 2010.
+##' Earth quakes from 1973 to 2010
 ##'
 ##' The time, location and magnitude of all the earth quakes with
 ##' magnitude being greater than 6 since 1973.
 ##' @name quake6
 ##' @docType data
-##' @keywords datasets
 ##' @references \url{http://cos.name/cn/topic/101510}
 ##' @examples data(quake6)
 ##'
@@ -432,7 +393,7 @@ NULL
 NULL
 
 
-##' Composition of Soil from Murcia Province, Spain.
+##' Composition of Soil from Murcia Province, Spain
 ##'
 ##' The proportions of sand, silt and clay in soil samples are given
 ##' for 8 contiguous sites. The sites extended over the crest and
@@ -447,20 +408,16 @@ NULL
 ##' content.
 ##' @name murcia
 ##' @docType data
-##' @keywords datasets
 ##' @references \url{http://www.statsci.org/data/general/murcia.html}
 ##' @examples data(murcia)
 ##' boxplot(sand~site,data=murcia)
-##'
 NULL
 
 
-##' Longitude and latitude of earthquakes in the Sichuan Province.
-##'
+##' Longitude and latitude of earthquakes in the Sichuan Province
 ##' @name eq2010
 ##' @docType data
 ##' @keywords datasets
 ##' @examples data(eq2010)
 ##' plot(lat~long,data=eq2010)
-##'
 NULL

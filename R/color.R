@@ -1,7 +1,7 @@
-##' Generate colors from a vector.
+##' Generate colors from a vector
+##'
 ##' This functions generates a color vector from an input vector,
 ##' which can be of the class numeric or factor.
-##'
 ##' @rdname vec2col
 ##' @param vec the numeric or factor vector
 ##' @param n the number of colors to be generated from the palette

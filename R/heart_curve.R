@@ -1,7 +1,7 @@
-##' Draw a heart curve.
+##' Draw a heart curve
+##'
 ##' Calculate the coordinates of a heart shape and draw it with a
 ##' polygon.
-##'
 ##' @param n the number of points to use when calculating the
 ##' coordinates of the heart shape
 ##' @param ... other arguments to be passed to
