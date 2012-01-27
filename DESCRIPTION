@@ -5,11 +5,27 @@ Version: 0.2
 Date: 2011-01-28
 Author: Yihui Xie
 Maintainer: Yihui Xie <xie@yihui.name>
-Description: A companion to the Chinese book ``Modern Statistical Graphics'' by Yihui Xie.
+Description: A companion to the Chinese book ``Modern Statistical Graphics'' by
+    Yihui Xie.
 License: GPL
 LazyLoad: yes
-Imports: RColorBrewer
-Suggests: animation, KernSmooth, rgl, plotrix, aplpack, ggplot2, iplots, sna
+Imports:
+    RColorBrewer
+Suggests:
+    animation,
+    KernSmooth,
+    rgl,
+    plotrix,
+    aplpack,
+    ggplot2 (>= 0.9),
+    iplots,
+    sna
 URL: http://yihui.name/cn/publication
 BugReports: https://github.com/yihui/MSG/issues
-
+Collate:
+    'andrews_curve.R'
+    'char_gen.R'
+    'color.R'
+    'cut_plot.R'
+    'heart_curve.R'
+    'MSG-package.R'

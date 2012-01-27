@@ -1,0 +1,8 @@
+export(andrews_curve)
+export(char_gen)
+export(cut_plot)
+export(heart_curve)
+export(vec2col)
+importFrom(RColorBrewer,brewer.pal)
+S3method(vec2col,default)
+S3method(vec2col,factor)
