@@ -1,10 +1,1 @@
 This is an R package for my Chinese book ``Modern Statistical Graphics''.
-
-To install this package, you need to:
-
-install.packages(c('Rd2roxygen', 'formatR'))
-library(Rd2roxygen)
-# setwd('path/to/this/package')
-rab('MSG', install = TRUE)
-
-Or simply install from CRAN when it is published.
