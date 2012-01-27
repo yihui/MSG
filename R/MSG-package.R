@@ -320,12 +320,11 @@ NULL
 ##' @docType data
 ##' @references
 ##' \url{http://www.neilkodner.com/2011/02/visualizations-of-canabalt-scores-scraped-from-twitter/}
-##' @examples if (require('ggplot2')) {
+##' @examples library(ggplot2)
 ##' data(canabalt)
 ##' print(qplot(device,score,data=canabalt))
 ##' print(qplot(reorder(death,score,median),score,data=canabalt,
 ##' geom='boxplot')+coord_flip())
-##' }
 NULL
 
 
@@ -355,10 +354,9 @@ NULL
 ##' @references \url{http://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
 ##' @examples data(tvearn)
 ##' plot(pay ~ rating, data=tvearn)
-##' if (require('ggplot2')) {
+##' library(ggplot2)
 ##' qplot(pay,data=tvearn,geom='histogram',facets=gender~.,binwidth=20000)
 ##' qplot(rating,pay,data=tvearn,geom=c('jitter','smooth'),color=type)
-##' }
 NULL
 
 
@@ -385,11 +383,9 @@ NULL
 ##' @docType data
 ##' @references \url{http://cos.name/cn/topic/101510}
 ##' @examples data(quake6)
-##'
-##' if (require('ggplot2')) {
+##' library(ggplot2)
 ##' qplot(year, month, data = quake6) + stat_sum(aes(size = ..n..)) +
 ##'     scale_size(to = c(1, 10))
-##' }
 NULL
 
 
