@@ -2,10 +2,10 @@
 \name{BinormCircle}
 \alias{BinormCircle}
 \title{Random numbers containing a ``circle''}
-\format{A data frame with 20000 observations on the following 2
-variables.  \describe{ \item{V1}{the first random variable with
-the x-axis coordinate of the circle} \item{V2}{the second random
-variable with the y-axis coordinate of the circle} }}
+\format{A data frame with 20000 observations on the following 2 variables.
+  \describe{ \item{V1}{the first random variable with the x-axis coordinate
+  of the circle} \item{V2}{the second random variable with the y-axis
+  coordinate of the circle} }}
 \source{
   \url{http://yihui.name/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}
 }
@@ -35,8 +35,7 @@ plot(BinormCircle, xlim = c(-1, 1), ylim = c(-1, 1))
 plot(BinormCircle, pch = ".")
 
 ## subset
-plot(BinormCircle[sample(nrow(BinormCircle), 1000), 
-    ])
+plot(BinormCircle[sample(nrow(BinormCircle), 1000), ])
 
 ## 2D density estimation
 library(KernSmooth)
@@ -49,20 +48,16 @@ if (interactive() && require("rgl")) {
     rgl.surface(fit$x1, fit$x2, fit$fhat)
     # animation
     M = par3d("userMatrix")
-    play3d(par3dinterp(userMatrix = list(M, rotate3d(M, pi/2, 
-        1, 0, 0), rotate3d(M, pi/2, 0, 1, 0), rotate3d(M, pi, 
-        0, 0, 1))), duration = 20)
+    play3d(par3dinterp(userMatrix = list(M, rotate3d(M, pi/2, 1, 0, 0), rotate3d(M, 
+        pi/2, 0, 1, 0), rotate3d(M, pi, 0, 0, 1))), duration = 20)
 }
 
 ## data generation
 x1 = rnorm(10000)
 y1 = rnorm(10000)
-x2 = rep(0.5 * cos(seq(0, 2 * pi, length = 500)), 
-    20)
-y2 = rep(0.5 * sin(seq(0, 2 * pi, length = 500)), 
-    20)
+x2 = rep(0.5 * cos(seq(0, 2 * pi, length = 500)), 20)
+y2 = rep(0.5 * sin(seq(0, 2 * pi, length = 500)), 20)
 x = cbind(c(x1, x2), c(y1, y2))
-BinormCircle = as.data.frame(round(x[sample(20000), 
-    ], 3))
+BinormCircle = as.data.frame(round(x[sample(20000), ], 3))
 }
 \keyword{datasets}

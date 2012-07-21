@@ -1,9 +1,9 @@
 \name{andrews_curve}
 \alias{andrews_curve}
-\title{Draw Andrew's Curve.}
+\title{Draw Andrew's Curve}
 \usage{
-andrews_curve(x, n = 101, type = "l", lty = 1, lwd = 1, 
-    pch = NA, xlab = "t", ylab = "f(t)", ...)
+andrews_curve(x, n = 101, type = "l", lty = 1, lwd = 1, pch = NA, xlab = "t", ylab = "f(t)", 
+    ...)
 }
 \arguments{
   \item{x}{a data frame or matrix}
@@ -19,11 +19,12 @@ andrews_curve(x, n = 101, type = "l", lty = 1, lwd = 1,
   different t values
 }
 \description{
-  Draw Andrew's Curve.
+  This function evaluates the transformation of the
+  original data matrix for \code{t} from \code{-pi} to
+  \code{pi}, and uses \code{matplot} to draw the curves.
 }
 \examples{
-andrews_curve(iris[, -5], col = as.integer(iris[, 
-    5]))
+andrews_curve(iris[, -5], col = as.integer(iris[, 5]))
 }
 \author{
   Yihui Xie <\url{http://yihui.name}>
