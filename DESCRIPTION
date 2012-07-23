@@ -16,9 +16,7 @@ Suggests:
     KernSmooth,
     rgl,
     plotrix,
-    aplpack,
     ggplot2 (>= 0.9),
-    iplots,
     sna
 URL: http://yihui.name/cn/publication
 BugReports: https://github.com/yihui/MSG/issues
