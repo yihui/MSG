@@ -1,6 +1,6 @@
 require(RgoogleMaps)
 
-markerdata <- read.csv("/root/Napoleon.csv")
+markerdata <- read.csv(system.file("extdata", "Napoleon.csv", package = "MSG"))
 boundingbox <- qbbox(lon = markerdata[ , "lon"], lat = markerdata[ ,"lat"])
 NPMap <- GetMap.bbox(boundingbox$lonR, boundingbox$latR, destfile = "np.png", maptype = "map", zoom = 6, size = c(640, 370))
 
