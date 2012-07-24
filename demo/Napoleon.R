@@ -13,7 +13,7 @@ PlotOnStaticMap(NPMap, FUN = lines, lon=markerdata$lon[5:6], lat=markerdata$lat[
 
 for (i in 6:15)
   {
-  PlotOnStaticMap(NPMap, FUN = lines, lon=markerdata$lon[i:(i+1)], lat=markerdata$lat[i:(i+1)], lwd = 0.00015 * markerdata$size[i], col = rgb(139, 0, 0, alpha = 120, maxColorValue = 255), add = TRUE, verbose=0)
+  PlotOnStaticMap(NPMap, FUN = lines, lon=markerdata$lon[i:(i+1)], lat=markerdata$lat[i:(i+1)], lwd = 0.0001 * markerdata$size[i], col = rgb(139, 0, 0, alpha = 120, maxColorValue = 255), add = TRUE, verbose=0)
   }
 
 
