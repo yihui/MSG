@@ -11,7 +11,7 @@ lwd_m[1:5] <- seq(0.00015, 0.00011, by = -1e-05)
 color <- c('#8B000078', '#00008B78')
 
 tmp <- c(16, 35, 41, 43, 46)
-n <- 1
+n <- 1 # Engage 1 and Lose 2
 
 PlotOnStaticMap(
   NPMap, FUN = lines,
