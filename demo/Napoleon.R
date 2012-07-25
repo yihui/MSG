@@ -6,7 +6,7 @@ NPMap <- GetMap.bbox(boundingbox$lonR, boundingbox$latR, destfile = tempfile(),
                      maptype = 'map', zoom = 6, size = c(640, 370))
 
 lwd_m <- rep(1e-04, nrow(markerdata) - 1)
-lwd_m[1:5] <- seq(0.00015, 0.00011, by = -1e-05)
+lwd_m[1:5] <- (15:11) * 1e-5
 
 color <- c('#8B000078', '#00008B78')
 
