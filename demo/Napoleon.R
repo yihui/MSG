@@ -19,6 +19,6 @@ for (i in 2:(nrow(markerdata)-1))
       PlotOnStaticMap(NPMap, FUN = lines, lon=markerdata$lon[i:(i+1)], lat=markerdata$lat[i:(i+1)], lwd =  lwd_m[i]* markerdata$size[i], col = color[n], add = TRUE, verbose=0)
     }
     else{
-      n<-which(tmp==i)%%2+1
+      n<-ifelse(n == 1, 2, 1)
     }
   }
