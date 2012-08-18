@@ -1,4 +1,4 @@
-# 注意：以下两行代码足够添加密度曲线，本图作了美化
+# a simplified version would be:
 # hist(geyser$waiting, freq = FALSE, main = "")
 # lines(density(geyser$waiting))
 par(mar = c(1.8, 3, 0.5, 0.1), mgp = c(2, 0.5, 0))

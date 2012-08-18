@@ -6,7 +6,7 @@ mousemove <- function(buttons, x, y) {
         r)
     plot(xx, yy, type = "n")
 rect(-1,-1,2,2,col='black')
-# 鼠标周围画矩形
+# a rectangle around the cursor
     rect(x - r, y - r, x + r, y + r, border = "yellow", lty = 2)
     points(xx[idx], yy[idx], col = "yellow", cex = 2)
     points(xx[!idx], yy[!idx], col = "red")
