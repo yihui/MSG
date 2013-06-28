@@ -22,19 +22,20 @@ data(tukeyCount)
 ## does Tukey's rule of thumb agree with t test and Wilcoxon test?
 with(tukeyCount, {
     ucount = unique(count)
-    stripchart(pvalue.t ~ count, method = "jitter", jitter = 0.2, pch = 19, cex = 0.7, 
-        vertical = TRUE, at = ucount - 0.2, col = rgb(1, 0, 0, 0.2), xlim = c(min(count) - 
-            1, max(count) + 1), xaxt = "n", xlab = "Tukey Count", ylab = "P-values")
-    stripchart(pvalue.w ~ count, method = "jitter", jitter = 0.2, pch = 21, cex = 0.7, 
-        vertical = TRUE, at = ucount + 0.2, add = TRUE, col = rgb(0, 0, 1, 0.2), 
-        xaxt = "n")
+    stripchart(pvalue.t ~ count, method = "jitter", jitter = 0.2, pch = 19, 
+        cex = 0.7, vertical = TRUE, at = ucount - 0.2, col = rgb(1, 0, 0, 0.2), 
+        xlim = c(min(count) - 1, max(count) + 1), xaxt = "n", xlab = "Tukey Count", 
+        ylab = "P-values")
+    stripchart(pvalue.w ~ count, method = "jitter", jitter = 0.2, pch = 21, 
+        cex = 0.7, vertical = TRUE, at = ucount + 0.2, add = TRUE, col = rgb(0, 
+            0, 1, 0.2), xaxt = "n")
     axis(1, unique(count))
-    lines(sort(ucount), tapply(pvalue.t, count, median), type = "o", pch = 19, cex = 1.3, 
-        col = "red")
-    lines(sort(ucount), tapply(pvalue.w, count, median), type = "o", pch = 21, cex = 1.3, 
-        col = "blue", lty = 2)
-    legend("topright", c("t test", "Wilcoxon test"), col = c("red", "blue"), pch = c(19, 
-        21), lty = 1:2, bty = "n", cex = 0.8)
+    lines(sort(ucount), tapply(pvalue.t, count, median), type = "o", pch = 19, 
+        cex = 1.3, col = "red")
+    lines(sort(ucount), tapply(pvalue.w, count, median), type = "o", pch = 21, 
+        cex = 1.3, col = "blue", lty = 2)
+    legend("topright", c("t test", "Wilcoxon test"), col = c("red", "blue"), 
+        pch = c(19, 21), lty = 1:2, bty = "n", cex = 0.8)
 })
 
 if (interactive()) {

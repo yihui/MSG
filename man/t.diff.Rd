@@ -29,7 +29,8 @@ if (interactive()) {
         t.diff = rbind(t.diff, replicate(1000, {
             x1 = rnorm(n1, mean = 0, sd = runif(1, 0.5, 1))
             x2 = rnorm(30, mean = 1, sd = runif(1, 2, 5))
-            t.test(x1, x2, var.equal = TRUE)$p.value - t.test(x1, x2, var.equal = FALSE)$p.value
+            t.test(x1, x2, var.equal = TRUE)$p.value - t.test(x1, x2, 
+                var.equal = FALSE)$p.value
         }))
     }
     t.diff = as.data.frame(t(t.diff))

@@ -9,8 +9,8 @@
 \examples{
 data(quake6)
 library(ggplot2)
-qplot(year, month, data = quake6) + stat_sum(aes(size = ..n..)) + scale_size(range = c(1, 
-    10))
+qplot(year, month, data = quake6) + stat_sum(aes(size = ..n..)) + 
+    scale_size(range = c(1, 10))
 }
 \references{
   \url{http://cos.name/cn/topic/101510}
