@@ -5,25 +5,21 @@
 cut_plot(x, y, breaks, ..., pch.cut = 20)
 }
 \arguments{
-  \item{x}{the x variable}
+\item{x}{the x variable}
 
-  \item{y}{the y variable}
+\item{y}{the y variable}
 
-  \item{breaks}{the breaks to cut the x variable}
+\item{breaks}{the breaks to cut the x variable}
 
-  \item{...}{other arguments to be passed to
-  \code{\link[graphics]{plot.default}}}
+\item{...}{other arguments to be passed to
+\code{\link[graphics]{plot.default}}}
 
-  \item{pch.cut}{the point symbol to denote the mean values
-  of y}
-}
-\value{
-  NULL
+\item{pch.cut}{the point symbol to denote the mean values of y}
 }
 \description{
-  This function can categorize the variable on the x-axis
-  into groups and plot the mean values of y. The purpose is
-  to show the arbitrariness of the discretization of data.
+This function can categorize the variable on the x-axis into groups and plot
+the mean values of y. The purpose is to show the arbitrariness of the
+discretization of data.
 }
 \examples{
 x = rnorm(100)
@@ -31,5 +27,5 @@ y = rnorm(100)
 cut_plot(x, y, seq(min(x), max(x), length = 5))
 }
 \author{
-  Yihui Xie <\url{http://yihui.name}>
+Yihui Xie <\url{http://yihui.name}>
 }

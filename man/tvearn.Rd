@@ -3,8 +3,7 @@
 \alias{tvearn}
 \title{Top TV earners}
 \description{
-  The pay per episode for actors as well as other
-  information.
+The pay per episode for actors as well as other information.
 }
 \examples{
 data(tvearn)
@@ -14,6 +13,5 @@ qplot(pay, data = tvearn, geom = "histogram", facets = gender ~ ., binwidth = 20
 qplot(rating, pay, data = tvearn, geom = c("jitter", "smooth"), color = type)
 }
 \references{
-  \url{http://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
+\url{http://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
 }
-\keyword{datasets}

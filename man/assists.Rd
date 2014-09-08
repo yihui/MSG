@@ -3,7 +3,7 @@
 \alias{assists}
 \title{Assists between players in CLE and LAL}
 \description{
-  The players in the rows assisted the ones in the columns.
+The players in the rows assisted the ones in the columns.
 }
 \examples{
 data(assists)
@@ -14,6 +14,5 @@ if (require("sna")) {
 }
 }
 \references{
-  \url{http://www.basketballgeek.com/data/}
+\url{http://www.basketballgeek.com/data/}
 }
-\keyword{datasets}

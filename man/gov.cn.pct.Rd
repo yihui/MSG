@@ -8,16 +8,15 @@
   certain percentage} \item{round0}{a logical vector: rounded to integers?}
   \item{round1}{a logical vector: rounded to the 1st decimal place?} }}
 \source{
-  Google (date: 2009/12/17)
+Google (date: 2009/12/17)
 }
 \description{
-  This data was collected from Google by searching for
-  percentages in Chinese goverment websites.
+This data was collected from Google by searching for percentages in Chinese
+goverment websites.
 }
 \details{
-  We can specify the domain when searching in Google. For
-  this data, we used \samp{site:gov.cn}, e.g. to search for
-  \samp{87.53\% site:gov.cn}.
+We can specify the domain when searching in Google. For this data, we used
+\samp{site:gov.cn}, e.g. to search for \samp{87.53\% site:gov.cn}.
 }
 \examples{
 data(gov.cn.pct)
@@ -68,4 +67,3 @@ if (interactive()) {
     })
 }
 }
-\keyword{datasets}

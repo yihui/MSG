@@ -11,19 +11,18 @@ vec2col(vec, n, name)
 \method{vec2col}{factor}(vec, n, name)
 }
 \arguments{
-  \item{vec}{the numeric or factor vector}
+\item{vec}{the numeric or factor vector}
 
-  \item{n}{the number of colors to be generated from the
-  palette}
+\item{n}{the number of colors to be generated from the palette}
 
-  \item{name}{the name of the palette}
+\item{name}{the name of the palette}
 }
 \value{
-  a vector of colors corresponding to the input vector
+a vector of colors corresponding to the input vector
 }
 \description{
-  This functions generates a color vector from an input
-  vector, which can be of the class numeric or factor.
+This functions generates a color vector from an input vector, which can be of
+the class numeric or factor.
 }
 \examples{
 ## convert factor to colors
@@ -37,5 +36,5 @@ with(iris, plot(Petal.Length, Petal.Width, col = vec2col(Species, name = "Dark2"
 with(iris, plot(Petal.Length, Petal.Width, col = vec2col(Petal.Width), pch = 19))
 }
 \author{
-  Yihui Xie <\url{http://yihui.name}>
+Yihui Xie <\url{http://yihui.name}>
 }

@@ -6,10 +6,10 @@
   \describe{ \item{Export}{amount of export} \item{Year}{year from 1999 to
   2004} \item{Country}{country: US or China} }}
 \source{
-  \url{http://stat.wto.org}
+\url{http://stat.wto.org}
 }
 \description{
-  Export of US and China from 1999 to 2004 in US dollars
+Export of US and China from 1999 to 2004 in US dollars
 }
 \examples{
 data(Export.USCN)
@@ -28,4 +28,3 @@ axis(4, at = ylabel/8.27, labels = ylabel)
 mtext("Chinese RMB", side = 4, line = 2)
 box()
 }
-\keyword{datasets}

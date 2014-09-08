@@ -20,10 +20,3 @@ Suggests:
     sna
 URL: http://yihui.name/cn/publication
 BugReports: https://github.com/yihui/MSG/issues
-Collate:
-    'andrews_curve.R'
-    'char_gen.R'
-    'color.R'
-    'cut_plot.R'
-    'heart_curve.R'
-    'MSG-package.R'

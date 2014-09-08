@@ -6,15 +6,14 @@
   \describe{ \item{pvalue.t}{P-values of t test} \item{pvalue.w}{P-values of
   Wilcoxon test} \item{count}{Tukey's counts} }}
 \source{
-  Simulation; see the Examples section below.
+Simulation; see the Examples section below.
 }
 \description{
-  For the test of means of two samples, we calculated the
-  P-values and recorded the counts of Tukey's rule of
-  thumb.
+For the test of means of two samples, we calculated the P-values and recorded
+the counts of Tukey's rule of thumb.
 }
 \details{
-  See the reference for details.
+See the reference for details.
 }
 \examples{
 data(tukeyCount)
@@ -55,8 +54,7 @@ if (interactive()) {
 }
 }
 \references{
-  D. Daryl Basler and Robert B. Smawley. Tukey's Compact
-  versus Classic Tests. \emph{The Journal of Experimental
-  Education}, Vol. 36, No.  3 (Spring, 1968), pp. 86-88
+D. Daryl Basler and Robert B. Smawley. Tukey's Compact versus
+  Classic Tests. \emph{The Journal of Experimental Education}, Vol. 36, No.
+  3 (Spring, 1968), pp. 86-88
 }
-\keyword{datasets}
