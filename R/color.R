@@ -22,9 +22,8 @@
 vec2col = function(vec, n, name) {
   UseMethod('vec2col')
 }
-#' @method vec2col default
 #' @rdname vec2col
-#' @S3method vec2col default
+#' @export
 #' @importFrom RColorBrewer brewer.pal
 vec2col.default = function(vec, n, name) {
   if (missing(n)) n = 9
@@ -33,9 +32,8 @@ vec2col.default = function(vec, n, name) {
                               length.out = n))
   brewer.pal(n, name)[idx]
 }
-#' @method vec2col factor
 #' @rdname vec2col
-#' @S3method vec2col factor
+#' @export
 vec2col.factor = function(vec, n, name) {
   if (missing(n)) n = length(levels(vec))
   if (missing(name)) name = 'Accent'
