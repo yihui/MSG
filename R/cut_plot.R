@@ -16,7 +16,7 @@
 #' cut_plot(x,y,seq(min(x),max(x),length=5))
 cut_plot = function(x, y, breaks, ..., pch.cut = 20) {
   plot(x, y, ...)
-  x1 = cut(x,breaks)
+  x1 = cut(x, breaks)
   mid = (breaks[-length(breaks)] + breaks[-1])/2
   abline(v = breaks, lty = 2)
   points(mid,tapply(y, x1, mean), type = 'o', pch = pch.cut)
