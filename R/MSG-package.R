@@ -4,6 +4,7 @@
 #' @name MSG-package
 #' @aliases MSG-package MSG
 #' @docType package
+#' @import graphics
 #' @author Yihui Xie <\url{http://yihui.name}>
 #' @keywords package
 NULL
