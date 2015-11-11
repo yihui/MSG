@@ -1,3 +1,4 @@
+% Please edit documentation in R/MSG-package.R
 \docType{data}
 \name{gov.cn.pct}
 \alias{gov.cn.pct}

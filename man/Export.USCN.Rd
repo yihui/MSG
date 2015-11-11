@@ -1,3 +1,4 @@
+% Please edit documentation in R/MSG-package.R
 \docType{data}
 \name{Export.USCN}
 \alias{Export.USCN}

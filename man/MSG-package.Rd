@@ -1,3 +1,4 @@
+% Please edit documentation in R/MSG-package.R
 \docType{package}
 \name{MSG-package}
 \alias{MSG}

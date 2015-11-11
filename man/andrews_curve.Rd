@@ -1,3 +1,4 @@
+% Please edit documentation in R/andrews_curve.R
 \name{andrews_curve}
 \alias{andrews_curve}
 \title{Draw Andrew's Curve}
@@ -10,7 +11,7 @@ andrews_curve(x, n = 101, type = "l", lty = 1, lwd = 1, pch = NA, xlab = "t",
 
 \item{n}{number of x-axis values at which f(t) is evaluated}
 
-\item{type,lty,lwd,pch,xlab,ylab,...}{passed to
+\item{type, lty, lwd, pch, xlab, ylab, ...}{passed to
 \code{\link[graphics]{matplot}}}
 }
 \value{

@@ -1,3 +1,4 @@
+% Please edit documentation in R/heart_curve.R
 \name{heart_curve}
 \alias{heart_curve}
 \title{Draw a heart curve}

@@ -1,3 +1,4 @@
+% Please edit documentation in R/color.R
 \name{vec2col}
 \alias{vec2col}
 \alias{vec2col.default}

@@ -1,3 +1,4 @@
+% Please edit documentation in R/char_gen.R
 \name{char_gen}
 \alias{char_gen}
 \title{Generate a matrix of similar characters}

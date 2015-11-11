@@ -1,3 +1,4 @@
+% Please edit documentation in R/cut_plot.R
 \name{cut_plot}
 \alias{cut_plot}
 \title{Cut the points in a scatter plot into groups according to x-axis}

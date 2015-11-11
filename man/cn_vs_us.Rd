@@ -1,3 +1,4 @@
+% Please edit documentation in R/MSG-package.R
 \docType{data}
 \name{cn_vs_us}
 \alias{cn_vs_us}
