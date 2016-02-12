@@ -1,3 +1,7 @@
+		  CHANGES IN MSG VERSION 0.3
+
+  o tweaks to pass R CMD check
+
 		  CHANGES IN MSG VERSION 0.2.2
 
   o demos no longer use non-ASCII characters
