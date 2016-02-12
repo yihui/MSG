@@ -307,7 +307,8 @@ NULL
 #' @name canabalt
 #' @docType data
 #' @references
-#' \url{http://www.neilkodner.com/2011/02/visualizations-of-canabalt-scores-scraped-from-twitter/}
+#' \samp{http://www.neilkodner.com/2011/02/visualizations-of-canabalt-scores-scraped-from-twitter/}
+#' (the URL is not longer accessible)
 #' @examples library(ggplot2)
 #' data(canabalt)
 #' print(qplot(device,score,data=canabalt))
