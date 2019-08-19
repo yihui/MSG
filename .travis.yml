@@ -13,6 +13,7 @@ addons:
   apt:
     packages:
     - libmagick++-dev
+    - libglu1-mesa-dev
 
 before_install:
   - "curl https://xran.yihui.name/.gitconfig -o ~/.gitconfig"
