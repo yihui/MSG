@@ -5,13 +5,17 @@ cache: packages
 env:
   global:
     - R_PKG="$(basename $TRAVIS_REPO_SLUG)"
-    - secure: "rB4Bxk7356tDhwcNBKZorPjPUoTtmg71I/w8Ec/5b+e3ahqj715tL2hd+6woG2/h0CPpVgK0odCU0fm6KLoAlNqejFaytRzqIlMqN2zjIEkZPhy13BmqGHFbJCwgnKOdrQIHN08AiWX8hSPJ+W4jv8iEds5DZL4mYCwv0HHWmns="
 
 repos:
-  XRAN: http://yihui.name/xran
+  XRAN: https://xran.yihui.name
+
+addons:
+  apt:
+    packages:
+    - libmagick++-dev
 
 before_install:
-  - "wget -q http://yihui.name/xran/.gitconfig -O ~/.gitconfig"
+  - "curl https://xran.yihui.name/.gitconfig -o ~/.gitconfig"
 
 after_success:
-  - "(wget -q -O - http://yihui.name/xran/r-xran | bash)"
+  - "(curl https://xran.yihui.name/r-xran | bash)"
