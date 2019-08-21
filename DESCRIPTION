@@ -1,22 +1,27 @@
 Package: MSG
 Type: Package
 Title: Data and Functions for the Book Modern Statistical Graphics
-Version: 0.3
-Date: 2016-02-13
+Version: 1.0
+Date: 2019-08-21
 Author: Yihui Xie
 Maintainer: Yihui Xie <xie@yihui.name>
 Description: A companion to the Chinese book ``Modern Statistical Graphics''.
 License: GPL
 LazyLoad: yes
 Imports:
-    RColorBrewer
+    RColorBrewer (>= 2.6)
 Suggests:
-    animation,
-    KernSmooth,
-    rgl,
-    plotrix,
-    ggplot2 (>= 0.9),
-    sna
+    animation (>= 2.6),
+    igraph (>= 1.2.4.1),
+    KernSmooth (>= 2.23.15),
+    maps (>= 3.3.0),
+    mvtnorm (>= 1.0.11),
+    rgl (>= 0.100.30),
+    RgoogleMaps (>= 1.4.4),
+    plotrix (>= 3.7.6),
+    ggplot2 (>= 3.2.1),
+    grid (>= 3.6.0),
+    sna (>= 2.4)
 URL: http://yihui.name/cn/publication
 BugReports: https://github.com/yihui/MSG/issues
 RoxygenNote: 5.0.1
