@@ -4,7 +4,7 @@ x[, 1:2] = apply(x[, 1:2], 2, function(z) 20 * (z -
     min(z)) / (max(z) - min(z)) + 5)
 symbols(x[, 4], x[, 5],
   thermometers = x[, 1:3], fg = "gray40",
-  inches = 0.5, xlab = "人均预期寿命", ylab = "高学历者人数"
+  inches = 0.5, xlab = "\u4EBA\u5747\u9884\u671F\u5BFF\u547D", ylab = "\u9AD8\u5B66\u5386\u8005\u4EBA\u6570"
 )
 est = bkde2D(x[, 4:5], apply(x[, 4:5], 2, dpik))
 contour(est$x1, est$x2, est$fhat, add = TRUE, lty = "12")
