@@ -23,6 +23,6 @@ Suggests:
     ggplot2 (>= 3.2.1),
     grid (>= 3.6.0),
     sna (>= 2.4)
-URL: http://yihui.name/cn/publication
+URL: https://github.com/yihui/MSG
 BugReports: https://github.com/yihui/MSG/issues
 RoxygenNote: 5.0.1
