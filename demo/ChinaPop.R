@@ -1,12 +1,12 @@
 library(KernSmooth)
-x <- ChinaPop
-x[, 1:2] <- apply(x[, 1:2], 2, function(z) 20 * (z -
+x = ChinaPop
+x[, 1:2] = apply(x[, 1:2], 2, function(z) 20 * (z -
     min(z)) / (max(z) - min(z)) + 5)
 symbols(x[, 4], x[, 5],
   thermometers = x[, 1:3], fg = "gray40",
   inches = 0.5, xlab = "人均预期寿命", ylab = "高学历者人数"
 )
-est <- bkde2D(x[, 4:5], apply(x[, 4:5], 2, dpik))
+est = bkde2D(x[, 4:5], apply(x[, 4:5], 2, dpik))
 contour(est$x1, est$x2, est$fhat, add = TRUE, lty = "12")
 for (i in 1:nrow(x)) {
   text(x[i, 4], x[i, 5], rownames(x)[i],

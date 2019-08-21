@@ -1,4 +1,4 @@
-xsplineTest <- function(s, open = TRUE,
+xsplineTest = function(s, open = TRUE,
                         x = c(1, 1, 3, 3) / 4,
                         y = c(1, 3, 3, 1) / 4, ...) {
   plot(c(0, 1), c(0, 1), type = "n", axes = FALSE, xlab = "", ylab = "")

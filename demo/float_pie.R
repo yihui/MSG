@@ -5,7 +5,7 @@ polygon(c(0, 0, 5.5, 5.5), c(0, 3, 3, 0),
   border = NA,
   col = "#44aaff"
 )
-pie.col <- rgb(1:0, 1:0, c(0, 0), c(0.7, 1))
+pie.col = rgb(1:0, 1:0, c(0, 0), c(0.7, 1))
 floating.pie(1.7, 3, c(0.8, 0.2),
   radius = 0.5, col = pie.col,
   startpos = -0.3 * pi

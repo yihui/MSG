@@ -1,8 +1,8 @@
 Package: MSG
 Type: Package
 Title: Data and Functions for the Book Modern Statistical Graphics
-Version: 1.0
-Date: 2019-08-21
+Version: 0.3.1
+Date: 2016-02-13
 Author: Yihui Xie
 Maintainer: Yihui Xie <xie@yihui.name>
 Description: A companion to the Chinese book ``Modern Statistical Graphics''.

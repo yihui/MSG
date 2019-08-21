@@ -1,6 +1,6 @@
 par(mar = c(4, 4, 2, 2), cex.main = 1)
-x <- 10 * 1:nrow(volcano)
-y <- 10 * 1:ncol(volcano)
+x = 10 * 1:nrow(volcano)
+y = 10 * 1:ncol(volcano)
 filled.contour(x, y, volcano,
   color = terrain.colors,
   plot.title = title(
