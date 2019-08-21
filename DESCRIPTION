@@ -8,8 +8,9 @@ Maintainer: Yihui Xie <xie@yihui.name>
 Description: A companion to the Chinese book ``Modern Statistical Graphics''.
 License: GPL
 LazyLoad: yes
+Depends: R (>= 3.5.0)
 Imports:
-    RColorBrewer (>= 2.6)
+    RColorBrewer (>= 1.1.2)
 Suggests:
     animation (>= 2.6),
     igraph (>= 1.2.4.1),
