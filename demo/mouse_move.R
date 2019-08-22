@@ -20,5 +20,5 @@ if (interactive()) {
     getGraphicsEvent("Click mouse to exit", onMouseDown = mousedown,
                      onMouseMove = mousemove)
 }
-mousemove(0.2, 0.3)
+mousemove(, 0.2, 0.3)
 arrows(0.22, 0.27, 0.18, 0.33, 0.15, lwd = 4, col = "white")
