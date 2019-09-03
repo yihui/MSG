@@ -1,6 +1,6 @@
 # CHANGES IN MSG VERSION 0.4
 
-
+- Fixed a few broken demos thanks to Peng Zhao and Xiangyun Huang.
 
 # CHANGES IN MSG VERSION 0.3
 
