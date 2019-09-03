@@ -2,8 +2,13 @@ Package: MSG
 Type: Package
 Title: Data and Functions for the Book Modern Statistical Graphics
 Version: 0.3.1
-Author: Yihui Xie
-Maintainer: Yihui Xie <xie@yihui.name>
+Authors@R: c(
+  person("Yihui", "Xie", role = c("aut", "cre"), email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")),
+  person("Lijia", "Yu", role = "ctb"),
+  person("Xiangyun", "Huang", role = "ctb"),
+  person("Peng", "Zhao", role = "ctb"),
+  person()
+  )
 Description: A companion to the Chinese book ``Modern Statistical Graphics''.
 License: GPL
 LazyLoad: yes
