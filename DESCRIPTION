@@ -11,7 +11,6 @@ Authors@R: c(
   )
 Description: A companion to the Chinese book ``Modern Statistical Graphics''.
 License: GPL
-LazyLoad: yes
 Depends: R (>= 3.5.0)
 Imports:
     RColorBrewer (>= 1.1.2)
