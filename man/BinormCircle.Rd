@@ -4,10 +4,12 @@
 \name{BinormCircle}
 \alias{BinormCircle}
 \title{Random numbers containing a ``circle''}
-\format{A data frame with 20000 observations on the following 2 variables.
+\format{
+A data frame with 20000 observations on the following 2 variables.
   \describe{ \item{V1}{the first random variable with the x-axis coordinate
   of the circle} \item{V2}{the second random variable with the y-axis
-  coordinate of the circle} }}
+  coordinate of the circle} }
+}
 \source{
 \url{http://yihui.name/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}
 }

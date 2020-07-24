@@ -4,9 +4,11 @@
 \name{tukeyCount}
 \alias{tukeyCount}
 \title{Results of a Simulation to Tukey's Fast Test}
-\format{A data frame with 10000 observations on the following 3 variables.
+\format{
+A data frame with 10000 observations on the following 3 variables.
   \describe{ \item{pvalue.t}{P-values of t test} \item{pvalue.w}{P-values of
-  Wilcoxon test} \item{count}{Tukey's counts} }}
+  Wilcoxon test} \item{count}{Tukey's counts} }
+}
 \source{
 Simulation; see the Examples section below.
 }
