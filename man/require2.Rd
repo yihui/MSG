@@ -16,7 +16,6 @@ install packages
 Load packages with automatic installation if not installed
 }
 \examples{
-pkgs <- c("alphahull", "animation", "aplpack", "bookdown", 
-    "ropensci/rnaturalearthhires", "GuangchuangYu/nCov2019")
+pkgs <- c("animation", "ggplot2")
 require2(pkgs)
 }

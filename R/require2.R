@@ -15,7 +15,8 @@ install_github2 <- function(pkg){
 #' @export
 #'
 #' @examples
-#' pkgs <- c( "alphahull", "animation", "aplpack", "bookdown","ropensci/rnaturalearthhires", "GuangchuangYu/nCov2019")
+#' pkgs <- c("animation", "ggplot2")
+#' # pkgs <- c("animation", "ggplot2", "GuangchuangYu/nCov2019")
 #' require2(pkgs)
 require2 <- function(pkgs){
   pkgs_n <- grepl("/", pkgs)
