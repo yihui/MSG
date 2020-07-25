@@ -8,6 +8,8 @@ msg(fig = 6.7, show_code = TRUE)
 }
 \arguments{
 \item{fig}{The figure number or the R script name, which is given in the book.}
+
+\item{show_code}{Logical.}
 }
 \value{
 A graph and the source code

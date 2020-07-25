@@ -17,5 +17,6 @@ Load packages with automatic installation if not installed
 }
 \examples{
 pkgs <- c("animation", "ggplot2")
+# pkgs <- c('animation', 'ggplot2', 'GuangchuangYu/nCov2019')
 require2(pkgs)
 }

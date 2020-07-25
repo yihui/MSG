@@ -1,7 +1,9 @@
+#' @importFrom utils install.packages
 install.packages2 <- function(pkg){
-    if (system.file(package = pkg) == "") install.packages(pkg)
+    if (system.file(package = pkg) == "") utils::install.packages(pkg)
 }
 
+#' @importFrom remotes install_github
 install_github2 <- function(pkg){
   install.packages2("remotes")
   if (system.file(package = basename(pkg)) == "") remotes::install_github(pkg)
