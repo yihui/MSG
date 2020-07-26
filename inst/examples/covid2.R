@@ -1,39 +1,34 @@
-require2(c("ggplot2", "patchwork", "scales", "GuangchuangYu/nCov2019"))
-y = load_nCov2019(lang='zh')
-d = y['global']
-dd <- d[d$time == time(y) & d$country != '中国', ]
-dd <- d[d$time == as.Date("2020-03-27") & d$country != '中国', ]
-dd <- dd[order(-dd$cum_confirm)[1:40], ]
-dd$country = factor(dd$country, levels=dd$country)
-dd$angle = 1:40 * 360/40
-i = dd$angle > 90 & dd$confirm > 100
-dd$angle[i] = dd$angle[i] + 180
-dd$vjust = 1
-dd$vjust[i] = 0
-p_polor <-
-  ggplot(dd, aes(country, cum_confirm, fill=cum_confirm)) +
+# 以下是生成图形的代码：
+require2(c("ggplot2", "patchwork", "scales"))
+covid <- readRDS(system.file("extdata", "covidcountries.rds", package = "MSG"))
+n_countries <- nrow(covid)
+covid <- transform(covid,
+                   angle = 1: n_countries * 360/n_countries - 90 - 180/n_countries,
+                   hjust = 1,
+                   label = paste(cum_confirm, country))
+second_half <- (n_countries %/% 2):n_countries
+covid$angle[second_half] <- covid$angle[second_half] + 180
+covid$hjust[second_half] <- 0
+covid$label[second_half] <- paste(covid$country, covid$cum_confirm)[second_half]
+
+p_polar <-
+  ggplot(covid, aes(country, cum_confirm, fill=cum_confirm)) +
   geom_col(width=1, color='grey90') +
   geom_col(aes(y=I(10000)), width=1, fill='white', alpha = .2) +
   geom_col(aes(y=I(1000)), width=1, fill='white', alpha = .2) +
-  geom_col(aes(y=I(100)), width=1, fill='grey90', alpha = .2) +
-  geom_col(aes(y=I(10)), width=1, fill='grey90', alpha = .2) +
-  geom_col(aes(y=I(5)), width=1, fill = "white") +
+  geom_col(aes(y=I(100)), width=1, fill='white', alpha = .2) +
+  geom_col(aes(y=I(10)), width=1, fill = "white") +
   scale_y_log10() +
   scale_fill_gradientn(colors=c("steelblue", "lightgreen", "orange", "red","darkred", "brown"), trans="log") +
-  geom_text(aes(label=paste(country, cum_confirm, sep=" "),
-                y = cum_confirm *.8, angle=angle-90, vjust=vjust),
-            data=function(d) d[d$cum_confirm > 2200,],
-            size=3, color = "black")  +
-  geom_text(aes(label=paste0(cum_confirm, " ", country),
-                y = cum_confirm * 2, angle=angle+90),
-            data=function(d) d[d$cum_confirm <= 2200,],
-            size=3, vjust=0) +
+  geom_text(aes(label=label, y = cum_confirm,
+                angle=angle, hjust = hjust), vjust= 0.5, size = 3)  +
   theme_void() +
   theme(legend.position="none") +
-  coord_polar(direction=-1)
+  coord_polar()
+
 
 p_point <-
-  ggplot(dd, aes(country, cum_confirm)) +
+  ggplot(covid, aes(country, cum_confirm)) +
   geom_point(aes(color=cum_confirm), size = 2) +
   scale_color_gradientn(colours = rev(rainbow(5)),trans="log",
                         limits = 10^c(2, 5),
@@ -47,8 +42,9 @@ p_point <-
                 minor_breaks = as.vector(sapply(2:10, function(x) x * 10^(2:6))))+
   scale_x_discrete(expand = c(0.05, 0.05)) +
   labs(x = NULL, y = NULL) +
-  theme(legend.title = element_blank(), legend.position = c(0.9,0.8),
+  coord_flip() +
+  theme(legend.title = element_blank(), legend.position = c(0.9,0.3),
         axis.ticks = element_blank(),axis.text.y = element_blank(),
-        legend.background = element_blank()) +
-  coord_flip()
-print(p_polor / p_point + patchwork::plot_layout(heights = c(4,3)))
+        legend.background = element_blank())
+print(p_polar / p_point + patchwork::plot_layout(heights = c(4,3)))
+

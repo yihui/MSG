@@ -7,12 +7,11 @@
 #' @export
 #'
 #' @examples
-#' msg(6.7)
+#' msg(3.6)
 #' msg("ChinaPop")
-msg <- function(fig = 6.7, show_code = TRUE){
-  dtlist <- NULL
-  source(system.file("examples", "_dtlist.R", package = "MSG"))
-  if(class(fig) == "numeric") fig <- dtlist$graph[dtlist$nr == fig]
+msg <- function(fig = 3.6, show_code = TRUE){
+  graphnr <- read.csv(system.file("extdata", "graphnr.csv", package = "MSG"))
+  if(is.numeric(fig)) fig <- graphnr$graph[graphnr$nr == fig]
   rfile <- system.file("examples", paste0(fig, ".R"), package = "MSG")
   source(rfile, encoding = "UTF-8")
   if(show_code) cat(readLines(rfile, encoding = "UTF-8"), sep = '\n')
