@@ -18,6 +18,5 @@ A graph and the source code
 Plot a graph with a pre-installed R script
 }
 \examples{
-msg(3.6)
-msg("ChinaPop")
+# msg(3.6) msg('ChinaPop')
 }

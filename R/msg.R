@@ -2,13 +2,14 @@
 #'
 #' @param fig The figure number or the R script name, which is given in the book.
 #' @param show_code Logical.
+#' @importFrom utils read.csv
 #'
 #' @return A graph and the source code
 #' @export
 #'
 #' @examples
-#' msg(3.6)
-#' msg("ChinaPop")
+#' # msg(3.6)
+#' # msg("ChinaPop")
 msg <- function(fig = 3.6, show_code = TRUE){
   graphnr <- read.csv(system.file("extdata", "graphnr.csv", package = "MSG"))
   if(is.numeric(fig)) fig <- graphnr$graph[graphnr$nr == fig]
