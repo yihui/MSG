@@ -4,12 +4,14 @@
 \alias{msg}
 \title{Plot a graph with a pre-installed R script}
 \usage{
-msg(fig = 3.6, show_code = TRUE)
+msg(fig = 3.6, show_code = TRUE, print_plot = TRUE)
 }
 \arguments{
 \item{fig}{The figure number or the R script name, which is given in the book.}
 
-\item{show_code}{Logical.}
+\item{show_code}{Logical. TRUE means the codes are shown in the console.}
+
+\item{print_plot}{Logical. TRUE means the graph is printed.}
 }
 \value{
 A graph and the source code
