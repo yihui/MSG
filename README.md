@@ -17,7 +17,7 @@ remotes::install_github("yihui/MSG")
 在 R 中加载：
 
 ```r
-require("MSG")
+library("MSG")
 ```
 
 这里，我们简要介绍一下它包含的函数和数据。更为详细的信息见帮助文档或《[现代统计图形](https://msg2020.pzhao.org)》一书。
