@@ -33,7 +33,7 @@ structure(c(1.09, 1.43, 6.09, 6.02, 4.62, 0.97, 2.57, 2.67, 0.96,
 "广东", "广西", "海南", "重庆", "四川", "贵州", "云南", "西藏",
 "陕西", "甘肃", "青海", "宁夏", "新疆"), c("horizontal", "vertical"
 ))))
-require2("KernSmooth")
+library(KernSmooth)
 x = ChinaPop
 x[, 1:2] = apply(x[, 1:2], 2, function(z) 20 * (z -
     min(z)) / (max(z) - min(z)) + 5)
