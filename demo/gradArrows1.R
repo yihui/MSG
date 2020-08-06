@@ -4,6 +4,7 @@ gradient = function(x, y, z, main = NULL, ..., FUN = function(x,y) x^2 + 2 * y^2
                      gamma = 0.05, tol = 0.001, len = 50, add = FALSE, nmax = 50) {
   if (!add) {
     image(x, y, z, ...)
+    grid(nx = length(x), ny = length(y), col = "white")
     mtext(
       side = 1, "...TO SEE A WORLD IN A GRAIN OF SAND, AND A HEAVEN IN A FLOWER... (by Yihui, 2008)",
       line = 0.5, cex = 0.7
@@ -63,7 +64,7 @@ z = outer(x, y, f2)
 set.seed(830)
 gradient(x, y, z,
   main = "$\\sin(x^2/2 - y^2/4 + 3) \\cos(2 x + 1 - \\exp(y))$",
-  col = sub("FF$", "66", heat.colors(12)), axes = FALSE, FUN = f2,
+  col =  heat.colors(12, alpha = 0.2), axes = FALSE, FUN = f2,
   rg = c(-0.8, -0.8, 0.7, 2), init = c(0.2, 2), gamma = 0.05,
   tol = 1e-04, nmax = 200, add = FALSE
 )
@@ -80,3 +81,4 @@ points(tmp0[, 1], tmp0[, 2],
   pch = 19, col = tmp1,
   cex = 1, lwd = 1
 )
+
