@@ -4,7 +4,7 @@ gradient = function(x, y, z, main = NULL, ..., FUN = function(x,y) x^2 + 2 * y^2
                      gamma = 0.05, tol = 0.001, len = 50, add = FALSE, nmax = 50) {
   if (!add) {
     image(x, y, z, ...)
-    grid(nx = length(x), ny = length(y), col = "white")
+    grid(nx = length(x), ny = length(y), col = "white", lty = 1)
     mtext(
       side = 1, "...TO SEE A WORLD IN A GRAIN OF SAND, AND A HEAVEN IN A FLOWER... (by Yihui, 2008)",
       line = 0.5, cex = 0.7
