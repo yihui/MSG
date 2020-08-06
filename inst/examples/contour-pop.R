@@ -1,4 +1,4 @@
-# ggplot2 绘制中国 31 地区国民预期寿命和高学历人数密度等高图
+# 基础作图法绘制中国 31 地区国民预期寿命和高学历人数密度等高图
 library(KernSmooth)
 data(ChinaLifeEdu, package = "MSG")
 par(mar = c(4, 4, 0.2, 0.2))

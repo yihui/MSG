@@ -10,7 +10,7 @@ bp_df = data.frame(x = bp_median[1], y = bp_median[2])
 bp0 = ggplot(data.frame(car.wd), aes(Weight, Disp.))
 bp1 = bp0 +
   stat_bag(prop = 1, fill = "blue") +  # enclose all the points
-  stat_bag(prop = 0.5, alpha = 0.5, fill = "blue") + # enclose 50% of points
+  stat_bag(prop = 0.5, alpha = 0.5, fill = "blue") + # 50% of points
   geom_point() +
   geom_point(data = bp_df, mapping=aes(x = x, y = y),
              col = "red", shape = 8, size = 3)
