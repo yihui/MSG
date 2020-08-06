@@ -1,5 +1,5 @@
 # 火山的三维透视图
-data("volcano", package = "MSG")
+data("volcano")
 z = volcano
 x = 4 * (1:nrow(z))
 y = 4 * (1:ncol(z))

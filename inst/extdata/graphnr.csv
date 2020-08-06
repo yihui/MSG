@@ -12,7 +12,6 @@ nr,graph
 "3.17",basketball
 "3.18",basketball-fourfold
 "3.10",canabalt-boxplot
-"23.10",canabalt-boxplot2
 "5.7",cdplot
 "25.7",cdplot2
 "6.4",ChinaPop
@@ -156,7 +155,7 @@ nr,graph
 "8.7",sunspots-asp
 "5.6",survival
 "25.6",survival2
-"6.5", symbols_all
+"6.5",symbols_all
 "9.14",text
 "3.13",tvearn
 "4.1",vadeaths-barplot

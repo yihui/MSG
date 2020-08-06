@@ -1,9 +1,13 @@
-# R 基础作图法绘制“末日狂奔”游戏得分在不同游戏平台以及死因下的比较
+# ggplot2 绘制“末日狂奔”游戏得分在不同游戏平台以及死因下的比较
 library(MSG)
+library(ggplot2)
+library(patchwork)
 data(canabalt)
-par(mfrow = c(2, 2))
-plot(year, price, type = "h", lwd = 5, lend = 1,
-     ylim = c(0, max(price) + 1), yaxs = "i")
-plot(year, price, type = "h", lwd = 5, lend = 1)
-plot(year, price, type = "o", ylim = c(0, max(price) + 1), yaxs = "i")
-plot(year, price, type = "o")
+canabalt_g1 = ggplot(canabalt) +
+  geom_boxplot(aes(device, score)) +
+  coord_flip()
+canabalt_g2 = ggplot(canabalt) +
+  geom_boxplot(aes(reorder(death, score, median), score)) +
+  xlab("death") +
+  coord_flip()
+print(canabalt_g1 / canabalt_g2)
