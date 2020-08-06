@@ -7,9 +7,9 @@ title(
   xlab = "X-axis title", ylab = "Y-axis title"
 )
 mtext("Here is \"side = 4\"", side = 4, line = 1)
-x <- c(6, 4, 6, 8)
-y <- c(8, 5, 2, 5)
-s <- c(0, 90, 180, 270)
+x = c(6, 4, 6, 8)
+y = c(8, 5, 2, 5)
+s = c(0, 90, 180, 270)
 for (i in 1:4) {
   text(x[i], y[i], sprintf("srt = %d", s[i]), srt = s[i])
 }

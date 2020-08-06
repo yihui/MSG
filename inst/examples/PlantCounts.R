@@ -13,7 +13,7 @@ with(PlantCounts, {
   plot(altitude, counts, col = rgb(0, 0, 0, 0.3))
   for (i in 1:200) {
     # 有放回抽取 300 个样本序号
-    idx <- sample(nrow(PlantCounts), 300, TRUE)
+    idx = sample(nrow(PlantCounts), 300, TRUE)
     lines(lowess(altitude[idx], counts[idx]), col = rgb(0, 0, 0, 0.1),
           lwd = 1.5)
   }

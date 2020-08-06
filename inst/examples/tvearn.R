@@ -2,10 +2,10 @@
 library(ggplot2)
 library(patchwork)
 data(tvearn)
-dh1 <- ggplot(aes(x = pay), data = tvearn) +
+dh1 = ggplot(aes(x = pay), data = tvearn) +
   geom_histogram(binwidth = 20000) +
   facet_grid(gender ~ .)
-dh2 <- ggplot(aes(x = rating, y = pay, color = type), data = tvearn) +
+dh2 = ggplot(aes(x = rating, y = pay, color = type), data = tvearn) +
   geom_jitter() +
   geom_smooth(method = "loess") +
   scale_y_continuous(

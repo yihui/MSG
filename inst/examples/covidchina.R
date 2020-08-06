@@ -2,7 +2,7 @@
 library(ncovr)
 library(dplyr)
 library(scales)
-covidchina <- readRDS(
+covidchina = readRDS(
   system.file("extdata", "covidchina.rds", package = "MSG"))
 for (choose_date in c("01-21", "01-22")){
   print(plot_ggmap(covidchina,

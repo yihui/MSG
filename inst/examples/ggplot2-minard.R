@@ -1,9 +1,9 @@
 # 拿破仑远征图
 # 读取数据：
-troops <- read.table(
+troops = read.table(
   system.file("extdata", "troops.txt", package = "MSG"),
   header = TRUE)
-cities <- read.table(
+cities = read.table(
   system.file("extdata", "cities.txt", package = "MSG"),
   header = TRUE)
 
@@ -11,7 +11,7 @@ cities <- read.table(
 library(ggplot2)
 
 # 作图框架：
-p <- ggplot(cities, aes(long, lat)) +
+p = ggplot(cities, aes(long, lat)) +
   # 添加军队路线：
   geom_path(aes(size = survivors, colour = direction, group = group),
             data = troops, lineend = "round") +

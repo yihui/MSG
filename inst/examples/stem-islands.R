@@ -2,9 +2,9 @@
 library(ggplot2)
 library(cowplot)
 data(islands)
-stem_txt <- readLines(
+stem_txt = readLines(
   system.file("extdata", "stem-islands.txt", package = "MSG"))
-stem1 <- ggplot(as.data.frame(islands)) +
+stem1 = ggplot(as.data.frame(islands)) +
   geom_histogram(aes(islands / 1000), binwidth = 2, fill = "white") +
   coord_flip(xlim = c(18, -6)) +
   theme(panel.grid.major=element_blank(),
@@ -12,7 +12,7 @@ stem1 <- ggplot(as.data.frame(islands)) +
   theme_void() +
   annotate("text", x = seq(-6, 18, 2), y = 0, hjust = 0,
            label = stem_txt)
-stem2 <- ggplot(as.data.frame(islands)) +
+stem2 = ggplot(as.data.frame(islands)) +
   geom_histogram(aes(islands / 1000), binwidth = 2) +
   coord_flip(xlim = c(18, -6))
 print(plot_grid(stem1, stem2, nrow = 1, align = "hv"))

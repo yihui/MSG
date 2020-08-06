@@ -2,19 +2,19 @@
 library(ggplot2)
 library(patchwork)
 library(scales)
-covid <- readRDS(
+covid = readRDS(
   system.file("extdata", "covidcountries.rds", package = "MSG"))
-n_countries <- nrow(covid)
-covid <- transform(
+n_countries = nrow(covid)
+covid = transform(
   covid, hjust = 1,label = paste(cum_confirm, country),
   angle = 1: n_countries * 360/n_countries - 90 - 180/n_countries)
-second_half <- (n_countries %/% 2):n_countries
-covid$angle[second_half] <- covid$angle[second_half] + 180
-covid$hjust[second_half] <- 0
-covid$label[second_half] <-
+second_half = (n_countries %/% 2):n_countries
+covid$angle[second_half] = covid$angle[second_half] + 180
+covid$hjust[second_half] = 0
+covid$label[second_half] =
   paste(covid$country, covid$cum_confirm)[second_half]
 
-p_polar <-
+p_polar =
   ggplot(covid, aes(country, cum_confirm, fill=cum_confirm)) +
   geom_col(width=1, color='grey90') +
   geom_col(aes(y=I(10000)), width=1, fill='white', alpha = .2) +
@@ -34,7 +34,7 @@ p_polar <-
   theme_void() +
   theme(legend.position="none") +
   coord_polar()
-p_point <-
+p_point =
   ggplot(covid, aes(country, cum_confirm)) +
   geom_point(aes(color=cum_confirm), size = 2) +
   scale_color_gradientn(

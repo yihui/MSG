@@ -3,10 +3,10 @@ library(scales)
 library(ggplot2)
 library(patchwork)
 data(gov.cn.pct, package = "MSG")
-p1 <- ggplot(gov.cn.pct) +
+p1 = ggplot(gov.cn.pct) +
   geom_line(aes(percentage,count))
-p2 <- p1 + xlim(c(9.9,11.1))
-p3 <- ggplot(gov.cn.pct,
+p2 = p1 + xlim(c(9.9,11.1))
+p3 = ggplot(gov.cn.pct,
              aes(percentage, count, group = round0, color = round0)) +
   geom_point(size = 0.1, alpha = 0.3) +
   geom_smooth(aes(group = round0)) +
@@ -16,7 +16,7 @@ p3 <- ggplot(gov.cn.pct,
     minor_breaks = as.vector(sapply(2:10, function(x) x * 10^(2:6))))+
   theme(legend.position = c(0.8, 0.8),
         legend.background = element_blank())
-p4 <- ggplot(gov.cn.pct, aes(percentage, count, color = round1)) +
+p4 = ggplot(gov.cn.pct, aes(percentage, count, color = round1)) +
   geom_point(size = 0.1, alpha = 0.3) +
   geom_smooth(aes(group = round1)) +
   scale_y_log10(

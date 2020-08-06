@@ -1,6 +1,6 @@
 # 基础作图法绘制 LMS 回归的稳健性及其缺点
 library(MASS)
-olsLms <- function(x, y, l.col = c("red", "blue"),
+olsLms = function(x, y, l.col = c("red", "blue"),
                    l.lty = c(1, 2), ...) {
   plot(x, y, ...)
   abline(lm(y ~ x), col = l.col[1], lty = l.lty[1])

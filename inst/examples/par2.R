@@ -1,7 +1,7 @@
 # 不同的图形边框、字体样式、字体族、坐标轴标签样式、点样式、线末端样式和线样式
 par(mfrow = c(2, 2), mar = c(3, 3, 3, 2))
-btype <- c("l", "7", "c", "u")
-fml <- c("serif", "sans", "mono", "symbol")
+btype = c("l", "7", "c", "u")
+fml = c("serif", "sans", "mono", "symbol")
 for (i in 0:3) {
   plot(1:10,
        font.main = i + 1, las = i, pch = NA, bty = btype[i + 1],

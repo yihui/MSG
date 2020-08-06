@@ -1,5 +1,5 @@
 # lattice 中添加了密度曲线的直方图
-iris.panel <- histogram(
+iris.panel = histogram(
   ~ Sepal.Length | Species,
   layout = c(3, 1), data = iris, type = "density",
   panel = function(x, ...) {

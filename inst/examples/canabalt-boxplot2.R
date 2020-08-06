@@ -3,10 +3,10 @@ library(MSG)
 library(ggplot2)
 library(patchwork)
 data(canabalt)
-canabalt_g1 <- ggplot(canabalt) +
+canabalt_g1 = ggplot(canabalt) +
   geom_boxplot(aes(device, score)) +
   coord_flip()
-canabalt_g2 <- ggplot(canabalt) +
+canabalt_g2 = ggplot(canabalt) +
   geom_boxplot(aes(reorder(death, score, median), score)) +
   xlab("death") +
   coord_flip()

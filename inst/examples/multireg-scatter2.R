@@ -2,14 +2,14 @@
 library(ggplot2)
 library(patchwork)
 set.seed(123)
-x <- seq(0, 4, length = 100)
-z <- rep(0:4, each = 20)
-y <- -x + z + rnorm(100, 0, .25)
-df <- data.frame(x = x, y = y, z = factor(z))
-gg_xy1 <- ggplot(df, aes(x, y)) +
+x = seq(0, 4, length = 100)
+z = rep(0:4, each = 20)
+y = -x + z + rnorm(100, 0, .25)
+df = data.frame(x = x, y = y, z = factor(z))
+gg_xy1 = ggplot(df, aes(x, y)) +
   geom_point() +
   geom_smooth(method = "lm")
-gg_xy2 <- ggplot(df, aes(x, y, group = z, color = z)) +
+gg_xy2 = ggplot(df, aes(x, y, group = z, color = z)) +
   geom_point() +
   geom_smooth(method = "lm") +
   theme(legend.background = element_blank())

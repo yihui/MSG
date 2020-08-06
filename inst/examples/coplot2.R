@@ -1,7 +1,7 @@
 # ggplot2 绘制地震经纬度条件分割图
 data(quakes)
 library(ggplot2)
-p <- ggplot(transform(quakes, depth_group = cut(depth, breaks = 4))) +
+p = ggplot(transform(quakes, depth_group = cut(depth, breaks = 4))) +
   geom_polygon(
     data = map_data("world", region = c("New Zealand", "Fiji")),
     mapping = aes(long, lat, group = group, fill = region)) +

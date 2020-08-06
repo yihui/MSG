@@ -4,9 +4,9 @@ for (n in c(63, 60, 76, 74)) {
   set.seed(711)
   plot.new()
   box()
-  size <- c(replicate(n, 1 / rbeta(2, 1.5, 4)))
-  center <- t(replicate(n, runif(2)))[rep(1:n, each = 2), ]
-  color <- paste("#", apply(
+  size = c(replicate(n, 1 / rbeta(2, 1.5, 4)))
+  center = t(replicate(n, runif (2)))[rep(1:n, each = 2), ]
+  color = paste("#", apply(
     replicate(2 * n, sample(c(0:9, LETTERS[1:6]), 8, TRUE)), 2, paste,
     collapse = ""
   ), sep = "")

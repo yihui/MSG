@@ -2,7 +2,7 @@
 data("BinormCircle", package = "MSG")
 library(ggplot2)
 library(ggpointdensity)
-p <- ggplot(data = BinormCircle, aes(x = V1, y = V2)) +
+p = ggplot(data = BinormCircle, aes(x = V1, y = V2)) +
   geom_pointdensity(adjust = 0.1) +
   scale_color_gradient(low="lightblue", high="darkblue") +
   theme(legend.position = "")

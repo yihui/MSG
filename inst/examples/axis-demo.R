@@ -9,13 +9,13 @@ plot(1:13, Export.USCN$Export,
      panel.first = grid()
 )
 # 设置 x 轴的刻度标记：\n 的意思是换行符
-xlabel <- paste(Export.USCN$Year, "\n", Export.USCN$Country)
-xlabel[7] <- ""
+xlabel = paste(Export.USCN$Year, "\n", Export.USCN$Country)
+xlabel[7] = ""
 abline(v = 7, lty = 2) # 添加一条分隔线
 # 使用带有换行符的刻度标记
 axis(1, 1:13, labels = xlabel, tick = FALSE, cex.axis = 0.75)
 # 换算为人民币再计算另一个坐标轴刻度（汇率 8.27）
-ylabel <- pretty(Export.USCN$Export * 8.27)
+ylabel = pretty(Export.USCN$Export * 8.27)
 axis(4, at = ylabel / 8.27, labels = ylabel)
 mtext("Chinese RMB ($10^{16}$)", side = 4, line = 2)
 box()

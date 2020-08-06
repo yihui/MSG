@@ -1,10 +1,10 @@
 # ggplot2 绘制世界各国农业进出口竞争力地图
 source(system.file("extdata", "AgriComp.R", package = "MSG"))
 library(ggplot2)
-worldmap <- map_data("world")
-worldmap2 <- dplyr::left_join(worldmap, AgriComp,
+worldmap = map_data("world")
+worldmap2 = dplyr::left_join(worldmap, AgriComp,
                               by = c("region" = "Country"))
-p <- ggplot(worldmap2) +
+p = ggplot(worldmap2) +
   geom_polygon(aes(long,lat, group=group,  fill = Index)) +
   coord_quickmap() +
   scale_fill_gradientn(colours = rev(rainbow(5))) +
