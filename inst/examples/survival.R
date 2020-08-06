@@ -1,6 +1,5 @@
 # 基础作图法绘制急性髓细胞白血病病人生存函数图
-data(aml, package = "survival")
-library(survival)
+data("leukemia", package = "survival")
 library(survival)
 leukemia.surv = survfit(Surv(time, status) ~ x, data = aml)
 plot(leukemia.surv, lty = 1:2, xlab = "time")

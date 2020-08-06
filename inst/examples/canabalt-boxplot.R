@@ -2,7 +2,7 @@
 library(MSG)
 library(ggplot2)
 library(patchwork)
-data(canabalt)
+data(canabalt, package = "MSG")
 canabalt_g1 = ggplot(canabalt) +
   geom_boxplot(aes(device, score)) +
   coord_flip()

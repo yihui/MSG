@@ -1,5 +1,5 @@
 library(HistData)
-data(Nightingale)
+data(Nightingale, package = "HistData")
 
 # For some graphs, it is more convenient to reshape death rates to long format
 #  keep only Date and death rates

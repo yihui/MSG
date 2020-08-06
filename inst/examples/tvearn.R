@@ -1,7 +1,7 @@
 # 演员的薪酬直方图及薪酬与电视剧评分的散点图
 library(ggplot2)
 library(patchwork)
-data(tvearn)
+data(tvearn, package = "MSG")
 dh1 = ggplot(aes(x = pay), data = tvearn) +
   geom_histogram(binwidth = 20000) +
   facet_grid(gender ~ .)

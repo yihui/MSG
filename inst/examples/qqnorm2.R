@@ -2,7 +2,7 @@
 library(ggplot2)
 library(qqplotr)
 library(patchwork)
-data(geyser)
+data(geyser, package = "MASS")
 geyser$waiting_scaled = scale(geyser$waiting)
 qq1 = ggplot(data = geyser, mapping = aes(sample = waiting_scaled)) +
   coord_fixed(ratio = 1, xlim = c(-3, 3), ylim = c(-3,3)) +
