@@ -28,11 +28,12 @@ p_polar <-
     trans="log") +
   geom_text(aes(label=label, y = cum_confirm,
                 angle=angle, hjust = hjust), vjust= 0.5, size = 3)  +
+  annotate(
+    "text", x = 39, y = c(10, 100, 1000, 10000)*1.5, color = "white",
+    label=c(10, 100, 1000, 10000), angle = 360 / 40) +
   theme_void() +
   theme(legend.position="none") +
   coord_polar()
-
-
 p_point <-
   ggplot(covid, aes(country, cum_confirm)) +
   geom_point(aes(color=cum_confirm), size = 2) +
@@ -54,5 +55,4 @@ p_point <-
   theme(legend.title = element_blank(), legend.position = c(0.9,0.3),
         axis.ticks = element_blank(),axis.text.y = element_blank(),
         legend.background = element_blank())
-print(p_polar / p_point + patchwork::plot_layout(heights = c(4,3)))
-
+print(p_polar / p_point + plot_layout(heights = c(4,3)))
