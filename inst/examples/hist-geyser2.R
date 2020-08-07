@@ -9,7 +9,5 @@ p2 = p + geom_histogram(breaks = seq(40, 110, by = 5),
 p3 = p + geom_histogram(breaks = seq(40, 110, by = 10))
 p4 = p + geom_histogram(breaks = seq(42, 108, by = 2),
                          fill = "red", color = "black")
-print(plot_grid(p1, p2, p3, p4,
-                labels = c("(1) freq = TRUE", "(2) freq = FALSE",
-                     "(3) breaks = 5", "(4) breaks = 40"),
-                ncol = 2))
+print(plot_grid(p1, p2, p3, p4, align = "v", ncol = 2,
+                labels = c("(1)", "(2)","(3)", "(4)")))

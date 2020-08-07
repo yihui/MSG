@@ -8,5 +8,5 @@ p2 = p + facet_grid(~am) # 用自动档和手动挡将散点图切片并打印
 p3 = p + geom_density2d() # 散点图上加上二维核密度估计层
 print((p + labs(title = "p = ggplot() + geom_point()") |
          p1 + labs(title = "p + geom_smooth()")) /
-        (p2 + labs(title = "p + facet_grid(~am)") |
+        (p2 + labs(title = "p + facet_grid()") |
            p3 + labs(title = "p + geom_density2d()")))

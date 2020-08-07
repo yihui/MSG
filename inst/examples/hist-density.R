@@ -5,9 +5,11 @@ data(geyser, package = "MASS")
 hist(geyser$waiting, freq = FALSE, main = "")
 lines(density(geyser$waiting))
 
-hst = hist(geyser$waiting, probability = TRUE, main = "", xlab = "waiting")
+hst = hist(geyser$waiting, probability = TRUE,
+           main = "", xlab = "waiting")
 d = density(geyser$waiting)
-polygon(c(min(d$x), d$x, max(d$x)), c(0, d$y, 0), col = "lightgray", border = NA)
+polygon(c(min(d$x), d$x, max(d$x)), c(0, d$y, 0),
+        col = "lightgray", border = NA)
 lines(d)
 ht = NULL
 brk = seq(40, 110, 5)
