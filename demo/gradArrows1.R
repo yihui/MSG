@@ -28,7 +28,7 @@ gradient = function(x, y, z, main = NULL, ..., FUN = function(x,y) x^2 + 2 * y^2
       xy = rbind(xy, newxy[i, ])
       newxy = rbind(newxy, xy[i + 1, ] - gamma * attr(grad(xy[i + 1, 1], xy[i + 1, 2]), "gradient"))
       arrows(xy[1:i, 1], xy[1:i, 2], newxy[1:i, 1], newxy[1:i,2],
-             length = par("din")[1] / 30, col = cl0, lwd = 0.1)
+             length = par("din")[1] / 30, col = cl0, lwd = 2)
       gap = abs(FUN(newxy[i + 1, 1], newxy[i + 1, 2]) -
         FUN(xy[i + 1, 1], xy[i + 1, 2]))
       i = i + 1
