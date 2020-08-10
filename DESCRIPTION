@@ -28,4 +28,5 @@ Suggests:
     sna (>= 2.4)
 URL: https://github.com/yihui/MSG
 BugReports: https://github.com/yihui/MSG/issues
+Encoding: UTF-8
 RoxygenNote: 7.1.1
