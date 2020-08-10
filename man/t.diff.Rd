@@ -4,7 +4,9 @@
 \name{t.diff}
 \alias{t.diff}
 \title{The differences of P-values in t test assuming equal or unequal variances}
-\format{A data frame with 1000 rows and 99 columns.}
+\format{
+A data frame with 1000 rows and 99 columns.
+}
 \source{
 By simulation.
 }

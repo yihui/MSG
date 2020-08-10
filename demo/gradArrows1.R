@@ -4,6 +4,7 @@ gradient = function(x, y, z, main = NULL, ..., FUN = function(x,y) x^2 + 2 * y^2
                      gamma = 0.05, tol = 0.001, len = 50, add = FALSE, nmax = 50) {
   if (!add) {
     image(x, y, z, ...)
+    grid(nx = length(x), ny = length(y), col = "white", lty = 1)
     mtext(
       side = 1, "...TO SEE A WORLD IN A GRAIN OF SAND, AND A HEAVEN IN A FLOWER... (by Yihui, 2008)",
       line = 0.5, cex = 0.7
@@ -27,7 +28,7 @@ gradient = function(x, y, z, main = NULL, ..., FUN = function(x,y) x^2 + 2 * y^2
       xy = rbind(xy, newxy[i, ])
       newxy = rbind(newxy, xy[i + 1, ] - gamma * attr(grad(xy[i + 1, 1], xy[i + 1, 2]), "gradient"))
       arrows(xy[1:i, 1], xy[1:i, 2], newxy[1:i, 1], newxy[1:i,2],
-             length = par("din")[1] / 30, col = cl0, lwd = 0.1)
+             length = par("din")[1] / 30, col = cl0, lwd = 2)
       gap = abs(FUN(newxy[i + 1, 1], newxy[i + 1, 2]) -
         FUN(xy[i + 1, 1], xy[i + 1, 2]))
       i = i + 1
@@ -63,7 +64,7 @@ z = outer(x, y, f2)
 set.seed(830)
 gradient(x, y, z,
   main = "$\\sin(x^2/2 - y^2/4 + 3) \\cos(2 x + 1 - \\exp(y))$",
-  col = sub("FF$", "66", heat.colors(12)), axes = FALSE, FUN = f2,
+  col =  heat.colors(12, alpha = 0.2), axes = FALSE, FUN = f2,
   rg = c(-0.8, -0.8, 0.7, 2), init = c(0.2, 2), gamma = 0.05,
   tol = 1e-04, nmax = 200, add = FALSE
 )
@@ -80,3 +81,4 @@ points(tmp0[, 1], tmp0[, 2],
   pch = 19, col = tmp1,
   cex = 1, lwd = 1
 )
+

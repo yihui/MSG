@@ -4,9 +4,11 @@
 \name{PlantCounts}
 \alias{PlantCounts}
 \title{Number of plants corresponding to altitude}
-\format{A data frame with 600 observations on the following 2 variables.
+\format{
+A data frame with 600 observations on the following 2 variables.
   \describe{ \item{altitude}{altitude of the area} \item{counts}{number of
-  plants} }}
+  plants} }
+}
 \source{
 \url{http://cos.name/2008/11/lowess-to-explore-bivariate-correlation-by-yihui/}
 }

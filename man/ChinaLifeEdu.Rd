@@ -5,9 +5,11 @@
 \alias{ChinaLifeEdu}
 \title{Life Expectancy and the Number of People with Higher Education in China
 (2005)}
-\format{A data frame with 31 observations on the following 2 variables.
+\format{
+A data frame with 31 observations on the following 2 variables.
   \describe{ \item{Life.Expectancy}{Life expectancy}
-  \item{High.Edu.NO}{Number of people with higher education} }}
+  \item{High.Edu.NO}{Number of people with higher education} }
+}
 \source{
 China Statistical Yearbook 2005. National Bureau of Statistics.
 }

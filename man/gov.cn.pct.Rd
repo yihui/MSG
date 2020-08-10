@@ -4,11 +4,13 @@
 \name{gov.cn.pct}
 \alias{gov.cn.pct}
 \title{Percentage data in Chinese government websites}
-\format{A data frame with 10000 observations on the following 4 variables.
+\format{
+A data frame with 10000 observations on the following 4 variables.
   \describe{ \item{percentage}{a numeric vector: the percentages}
   \item{count}{a numeric vector: the number of webpages corresponding to a
   certain percentage} \item{round0}{a logical vector: rounded to integers?}
-  \item{round1}{a logical vector: rounded to the 1st decimal place?} }}
+  \item{round1}{a logical vector: rounded to the 1st decimal place?} }
+}
 \source{
 Google (date: 2009/12/17)
 }
