@@ -96,7 +96,7 @@ NULL
 #' @format A data frame with 13 observations on the following 3 variables.
 #'   \describe{ \item{Export}{amount of export} \item{Year}{year from 1999 to
 #'   2004} \item{Country}{country: US or China} }
-#' @source \url{http://stat.wto.org}
+#' @source \url{https://www.wto.org/english/res_e/statis_e/statis_e.htm}
 #' @name Export.USCN
 #' @docType data
 #' @examples
@@ -339,7 +339,7 @@ NULL
 #' The pay per episode for actors as well as other information.
 #' @name tvearn
 #' @docType data
-#' @references \url{http://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
+#' @references \url{https://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
 #' @examples data(tvearn)
 #' plot(pay ~ rating, data=tvearn)
 #' library(ggplot2)
@@ -369,7 +369,7 @@ NULL
 #' greater than 6 since 1973.
 #' @name quake6
 #' @docType data
-#' @references \url{http://cos.name/cn/topic/101510}
+#' @references \url{https://d.cosx.org/d/101510}
 #' @examples data(quake6)
 #' library(ggplot2)
 #' qplot(year, month, data = quake6) + stat_sum(aes(size = ..n..)) +
