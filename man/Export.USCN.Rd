@@ -10,7 +10,7 @@ A data frame with 13 observations on the following 3 variables.
   2004} \item{Country}{country: US or China} }
 }
 \source{
-\url{http://stat.wto.org}
+\url{https://www.wto.org/english/res_e/statis_e/statis_e.htm}
 }
 \description{
 Export of US and China from 1999 to 2004 in US dollars

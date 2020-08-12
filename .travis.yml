@@ -6,17 +6,18 @@ env:
   global:
     - R_PKG="$(basename $TRAVIS_REPO_SLUG)"
 
-repos:
-  XRAN: https://xran.yihui.name
-
 addons:
   apt:
     packages:
     - libmagick++-dev
     - libglu1-mesa-dev
 
-before_install:
-  - "curl https://xran.yihui.org/.gitconfig -o ~/.gitconfig"
-
-after_success:
-  - "(curl https://xran.yihui.org/r-xran | bash)"
+jobs:
+  include:
+    - r: oldrel
+    - r: release
+      before_install:
+        - "curl https://xran.yihui.org/.gitconfig -o ~/.gitconfig"
+      after_success:
+        - "(curl https://xran.yihui.org/r-xran | bash)"
+    - r: devel

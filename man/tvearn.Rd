@@ -15,5 +15,5 @@ qplot(pay, data = tvearn, geom = "histogram", facets = gender ~ ., binwidth = 20
 qplot(rating, pay, data = tvearn, geom = c("jitter", "smooth"), color = type)
 }
 \references{
-\url{http://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
+\url{https://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
 }
