@@ -31,7 +31,7 @@ nr,graph
 "5.2",curve
 "35.2",curve-tikz
 "25.2",curve2
-"8.5",cut-plot
+"8.6",cut-plot
 "38.5",cut-plot-tikz
 "7.3",density-2d-filled
 "10.9",diamonds-carat
@@ -42,7 +42,7 @@ nr,graph
 "4.2",dotchart
 "4.3",dotchart2
 "6.18",eqMaps-demo
-"8.10",error-bars
+"8.11",error-bars
 "6.7",faces2
 "7.14",fig-contour-persp
 "7.4",filled-contour
@@ -79,7 +79,7 @@ nr,graph
 "33.25",interaction-bubble-tikz
 "6.11",interaction-plot
 "10.5",iris-ggplot2
-"8.9",kmeans-cluster
+"8.10",kmeans-cluster
 "38.9",kmeans-cluster-tikz
 "11.6",lattice-data-par
 "311.6",lattice-data-par-tikz
@@ -108,7 +108,7 @@ nr,graph
 "3.26",OLS-LMS
 "23.26",OLS-LMS2
 "33.26",OLS-LMS2-tikz
-"8.8",optical-illusion
+"8.9",optical-illusion
 "3.27",outlier-resample
 "23.27",outlier-resample2
 "33.27",outlier-resample2-tikz
@@ -168,11 +168,12 @@ nr,graph
 "4.12",stripchart
 "4.13",stripchart2
 "5.3",sunflowerplot
-"8.7",sunspots-asp
+"8.8",sunspots-asp
 "5.6",survival
 "25.6",survival2
 "6.5",symbols_all
 "9.14",text
+"8.5",tufte1997
 "3.13",tvearn
 "4.1",vadeaths-barplot
 "24.1",vadeaths-barplot2
