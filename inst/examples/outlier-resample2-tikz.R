@@ -26,7 +26,8 @@ df2$Index = 1:nrow(df2)
 oc2 = ggplot(df2, aes(Index, y)) + geom_point() +
   ylab("Cook's distance")
 
-oc3 = ggplot() + geom_point(aes(x, y), df) +
+df$pch = rep(20:21, c(60, 42))
+oc3 = ggplot() + geom_point(aes(x, y, shape = I(pch)), df) +
   geom_smooth(aes(x, y), df[1:60,], method = "lm", fullrange = TRUE) +
   labs(x = "$x$", y = "$y$")
 

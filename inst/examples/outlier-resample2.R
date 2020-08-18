@@ -12,7 +12,7 @@ fit = lm(y ~ x) # y 对 x 做回归
 betaSim = numeric(100)
 for (i in 1:100) {
   idx = sample(c(TRUE, FALSE), length(x), replace = TRUE,
-                prob = c(0.6, 0.4))
+               prob = c(0.6, 0.4))
   betaSim[i] = coef(update(fit, subset = idx))[2]
 }
 
@@ -25,7 +25,8 @@ df2$Index = 1:nrow(df2)
 oc2 = ggplot(df2, aes(Index, y)) + geom_point() +
   ylab("Cook's distance")
 
-oc3 = ggplot() + geom_point(aes(x, y), df) +
+df$pch = rep(20:21, c(60, 42))
+oc3 = ggplot() + geom_point(aes(x, y, shape = I(pch)), df) +
   geom_smooth(aes(x, y), df[1:60, ], method = "lm", fullrange = TRUE)
 
 df4 = data.frame(y = betaSim)

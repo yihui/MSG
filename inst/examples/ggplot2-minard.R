@@ -23,7 +23,7 @@ p = ggplot(cities, aes(long, lat)) +
   # 设定颜色：
   scale_colour_manual(values = c("grey50", "red")) +
   # 设定线条尺寸：
-  # scale_size(range = c(1, 10)) +
+  scale_size(range = c(1, 10)) +
   # 隐藏图例设置：
   theme(legend.position = "none") +
   # 设定横轴范围：

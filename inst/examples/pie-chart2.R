@@ -12,12 +12,12 @@ pie1 = ggplot(pie_sales, aes(x = "", y = ratio, fill = name)) +
   geom_bar(width = 1, stat = "identity", color = "white") +
   coord_polar("y", start = 0) +
   theme_void()
-pie2 = ggplot(pie_sales, aes(name, ratio, color = name)) +
+dot1 = ggplot(pie_sales, aes(name, ratio, color = name)) +
   geom_point() +
   coord_flip() +
   theme(legend.position = "", axis.title = element_blank())
-pie3 = ggplot(pie_sales, aes(name, ratio, fill = name)) +
+col1 = ggplot(pie_sales, aes(name, ratio, fill = name)) +
   geom_col() +
   coord_flip() +
   theme(legend.position = "", axis.title = element_blank())
-print(pie1 / pie2 / pie3)
+print(pie1 / dot1 / col1)
