@@ -42,5 +42,5 @@ andrews_curve(iris[, -5], col = as.integer(iris[, 5]))
 \code{\link[graphics]{matplot}}
 }
 \author{
-Yihui Xie <\url{http://yihui.name}>
+Yihui Xie <\url{https://yihui.org}>
 }

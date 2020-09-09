@@ -8,7 +8,7 @@
 #' @param name the name of the palette
 #' @return a vector of colors corresponding to the input vector
 #' @export
-#' @author Yihui Xie <\url{http://yihui.name}>
+#' @author Yihui Xie <\url{https://yihui.org}>
 #' @examples
 #' ## convert factor to colors
 #' with(iris, plot(Petal.Length, Petal.Width, col = vec2col(Species), pch = 19))

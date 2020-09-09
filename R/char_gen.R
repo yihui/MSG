@@ -6,7 +6,7 @@
 #' @param n the total number of characters in the matrix
 #' @param nrow the number of rows
 #' @return a character matrix on the screen
-#' @author Yihui Xie <\url{http://yihui.name}>
+#' @author Yihui Xie <\url{https://yihui.org}>
 #' @export
 #' @examples
 #' char_gen()

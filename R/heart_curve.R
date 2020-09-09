@@ -6,7 +6,7 @@
 #' @param ... other arguments to be passed to \code{\link[graphics]{polygon}},
 #'   e.g. the color of the polygon (usually red)
 #' @return NULL
-#' @author Yihui Xie <\url{http://yihui.name}>
+#' @author Yihui Xie <\url{https://yihui.org}>
 #' @export
 #' @examples heart_curve()
 #' heart_curve(col = 'red')

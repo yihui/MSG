@@ -29,5 +29,5 @@ y = rnorm(100)
 cut_plot(x, y, seq(min(x), max(x), length = 5))
 }
 \author{
-Yihui Xie <\url{http://yihui.name}>
+Yihui Xie <\url{https://yihui.org}>
 }
