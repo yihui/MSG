@@ -18,5 +18,8 @@ cn_vs_us$metric =
 
 print(
   ggplot(cn_vs_us, aes(x = country, y = value, fill = country)) +
-  geom_col() + facet_wrap(~metric, scales = "free_y", ncol = 4)
+    geom_col() +
+    theme(axis.text.x = element_blank(),
+          axis.ticks = element_blank()) +
+    facet_wrap(~metric, scales = "free_y", ncol = 4)
 )
