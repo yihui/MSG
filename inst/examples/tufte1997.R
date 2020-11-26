@@ -7,8 +7,8 @@ p = ggplot(orings, aes(x = Temperature,y = Damage)) +
   geom_rect(aes(xmin = 26, xmax = 29, ymin = -Inf, ymax = Inf),
             alpha = 0.1, fill = "pink") +
   annotate("text", x = 25, y = 1, hjust = 0,
-           label="26$^{\\circ}$-29$^{\\circ}$ range of forecasted temperatures\n (as of January 27, 1986) for the launch\n of space shuttle Challenger on January 28") +
+           label="1996 年 1 月 27 日的天气预报，\n预测发射日 1 月 28 日的温度范围") +
   xlim(25, 85) +
-  labs(x = "Temperature ($^{\\circ}$F) of field joints at time of launch",
-       title = "O-ring damage\n index, each launch")
+  labs(x = "发射时温度 (华氏度)", y = "故障数量",
+       title = "O型圈故障")
 print(p)

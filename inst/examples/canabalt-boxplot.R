@@ -5,9 +5,10 @@ library(patchwork)
 data(canabalt, package = "MSG")
 canabalt_g1 = ggplot(canabalt) +
   geom_boxplot(aes(device, score)) +
+  labs(x = "设备", y = "得分") +
   coord_flip()
 canabalt_g2 = ggplot(canabalt) +
   geom_boxplot(aes(reorder(death, score, median), score)) +
-  xlab("death") +
+  labs(x = "死因", y = "得分") +
   coord_flip()
 print(canabalt_g1 / canabalt_g2)

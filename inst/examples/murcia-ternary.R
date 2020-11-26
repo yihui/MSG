@@ -2,4 +2,5 @@
 data(murcia, package = "MSG")
 library(vcd)
 ternaryplot(murcia[, 2:4], main = "",
-            col = vec2col(murcia$site), cex = .5)
+            dimnames = c("沙土", "壤土", "黏土"),
+            col = MSG::vec2col(murcia$site), cex = .5)

@@ -7,6 +7,6 @@ p = ggplot(transform(reshape2::melt(volcano),
   geom_tile() +
   geom_contour() +
   scale_fill_distiller(palette="RdYlGn") +
-  labs(x = "Meters North", y = "Meters West",
-       fill = "Height\n(meters)")
+  labs(x = "北部长度（米）", y = "西部长度（米）",
+       fill = "高度\n(米)")
 print(p)

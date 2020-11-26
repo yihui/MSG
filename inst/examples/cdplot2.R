@@ -8,7 +8,8 @@ p = ggplot(orings,
            aes(Temperature, ..count.., fill = Fail)) +
   geom_density(position = "fill") +
   geom_point(aes(Temperature, c(0.75, 0.25)[as.integer(Fail)])) +
-  scale_y_continuous("Fail", breaks = c(0.25, 0.75),
-                     labels = c("no", "yes")) +
+  xlab("温度") +
+  scale_y_continuous("失效", breaks = c(0.25, 0.75),
+                     labels = c("否", "是")) +
   theme(legend.position = "")
 print(p)

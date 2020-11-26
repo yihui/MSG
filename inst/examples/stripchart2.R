@@ -4,6 +4,7 @@ data(InsectSprays)
 p = ggplot(InsectSprays, aes(spray, count, color = spray)) +
   geom_boxplot(outlier.shape = NA) +
   geom_jitter(shape = 0) +
+  labs(x = "杀虫剂", y = "频数") +
   theme(legend.position = "") +
   coord_flip()
 print(p)

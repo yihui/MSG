@@ -2,7 +2,8 @@
 library(ggplot2)
 library(cowplot)
 data(geyser, package = "MASS")
-p = ggplot(aes(waiting), data = geyser)
+p = ggplot(aes(waiting), data = geyser) +
+  labs(x = "间隔时间", y = "频数")
 p1 = p + geom_histogram(breaks = seq(40, 110, by = 5))
 p2 = p + geom_histogram(breaks = seq(40, 110, by = 5),
                          aes(y = ..density..))

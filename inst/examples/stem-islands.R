@@ -13,6 +13,7 @@ stem1 = ggplot(as.data.frame(islands)) +
   annotate("text", x = seq(-6, 18, 2), y = 0, hjust = 0,
            label = stem_txt)
 stem2 = ggplot(as.data.frame(islands)) +
+  labs(x = "面积/1000", y = "频数") +
   geom_histogram(aes(islands / 1000), binwidth = 2) +
   coord_flip(xlim = c(18, -6))
 print(plot_grid(stem1, stem2, nrow = 1, align = "hv"))

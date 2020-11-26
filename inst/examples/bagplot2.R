@@ -7,7 +7,8 @@ source(system.file("examples", "stat_bag.R", package = "MSG"))
 car.wd = with(car.test.frame, cbind(Weight, Disp.))
 bp_median = apply(data.frame(car.wd), 2, median)
 bp_df = data.frame(x = bp_median[1], y = bp_median[2])
-bp0 = ggplot(data.frame(car.wd), aes(Weight, Disp.))
+bp0 = ggplot(data.frame(car.wd), aes(Weight, Disp.)) +
+  labs(x = "车重", y = "气缸排量")
 bp1 = bp0 +
   stat_bag(prop = 1, fill = "blue") +  # enclose all the points
   stat_bag(prop = 0.5, alpha = 0.5, fill = "blue") + # 50% of points
