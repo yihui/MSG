@@ -8,7 +8,7 @@
 #' @param type,lty,lwd,pch,xlab,ylab,... passed to
 #'   \code{\link[graphics]{matplot}}
 #' @return a matrix of coefficients for each observation at different t values
-#' @author Yihui Xie <\url{http://yihui.name}>
+#' @author Yihui Xie <\url{https://yihui.org}>
 #' @seealso \code{\link[graphics]{matplot}}
 #' @references
 #' \url{https://en.wikipedia.org/wiki/Andrews_plot}

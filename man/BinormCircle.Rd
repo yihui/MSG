@@ -11,7 +11,7 @@ A data frame with 20000 observations on the following 2 variables.
   coordinate of the circle} }
 }
 \source{
-\url{http://yihui.name/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}
+\url{https://yihui.org/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}
 }
 \description{
 The data was generated from two independent random varialbes (standard Normal

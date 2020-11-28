@@ -26,5 +26,5 @@ char_gen()
 char_gen(c("O", "Q"))
 }
 \author{
-Yihui Xie <\url{http://yihui.name}>
+Yihui Xie <\url{https://yihui.org}>
 }

@@ -5,7 +5,7 @@
 #' @aliases MSG-package MSG
 #' @docType package
 #' @import graphics
-#' @author Yihui Xie <\url{http://yihui.name}>
+#' @author Yihui Xie <\url{https://yihui.org}>
 #' @keywords package
 NULL
 
@@ -22,7 +22,7 @@ NULL
 #'   of the circle} \item{V2}{the second random variable with the y-axis
 #'   coordinate of the circle} }
 #'
-#' @source \url{http://yihui.name/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}
+#' @source \url{https://yihui.org/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}
 #' @name BinormCircle
 #' @docType data
 #' @examples data(BinormCircle)
@@ -191,7 +191,7 @@ NULL
 #'   \describe{ \item{altitude}{altitude of the area} \item{counts}{number of
 #'   plants} }
 #' @source
-#' \url{http://cos.name/2008/11/lowess-to-explore-bivariate-correlation-by-yihui/}
+#' \url{https://cosx.org/2008/11/lowess-to-explore-bivariate-correlation-by-yihui}
 #' @name PlantCounts
 #' @docType data
 #' @examples
