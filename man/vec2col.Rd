@@ -38,5 +38,5 @@ with(iris, plot(Petal.Length, Petal.Width, col = vec2col(Species, name = "Dark2"
 with(iris, plot(Petal.Length, Petal.Width, col = vec2col(Petal.Width), pch = 19))
 }
 \author{
-Yihui Xie <\url{http://yihui.name}>
+Yihui Xie <\url{https://yihui.org}>
 }

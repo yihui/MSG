@@ -22,5 +22,5 @@ heart_curve(col = "red")
 heart_curve(col = "pink", border = "red")
 }
 \author{
-Yihui Xie <\url{http://yihui.name}>
+Yihui Xie <\url{https://yihui.org}>
 }

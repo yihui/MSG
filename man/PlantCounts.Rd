@@ -10,7 +10,7 @@ A data frame with 600 observations on the following 2 variables.
   plants} }
 }
 \source{
-\url{http://cos.name/2008/11/lowess-to-explore-bivariate-correlation-by-yihui/}
+\url{https://cosx.org/2008/11/lowess-to-explore-bivariate-correlation-by-yihui}
 }
 \description{
 For each altitude, the number of plants is recorded.

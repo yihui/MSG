@@ -9,6 +9,6 @@
 Datasets and functions for the Chinese book ``Modern Statistical Graphics''.
 }
 \author{
-Yihui Xie <\url{http://yihui.name}>
+Yihui Xie <\url{https://yihui.org}>
 }
 \keyword{package}

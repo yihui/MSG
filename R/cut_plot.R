@@ -11,7 +11,7 @@
 #' @param pch.cut the point symbol to denote the mean values of y
 #' @return NULL
 #' @export
-#' @author Yihui Xie <\url{http://yihui.name}>
+#' @author Yihui Xie <\url{https://yihui.org}>
 #' @examples x=rnorm(100); y=rnorm(100)
 #' cut_plot(x,y,seq(min(x),max(x),length=5))
 cut_plot = function(x, y, breaks, ..., pch.cut = 20) {
