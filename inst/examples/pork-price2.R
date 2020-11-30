@@ -6,7 +6,8 @@ pork_price = data.frame(
   price = c(12.11, 18.80, 22.09, 18.39,
             19.86, 14.89, 16.68, 18.76, 19.57)
 )
-p = ggplot(pork_price, mapping = aes(year, price))
+p = ggplot(pork_price, mapping = aes(year, price)) +
+  labs(x = "年份", y = "价格")
 p1 = p + geom_bar(stat = "identity")
 p2 = p +
   geom_bar(mapping = aes(year, price - 12), stat = "identity") +

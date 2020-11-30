@@ -16,5 +16,6 @@ stem1 = ggplot(as.data.frame(x)) +
            label = stem_txt)
 stem2 = ggplot(as.data.frame(x)) +
   geom_histogram(aes(x), binwidth = 1) +
+  labs(y = "频数") +
   coord_flip(xlim = c(17, 1))
 print(plot_grid(stem1, stem2, nrow = 1, align = "hv"))

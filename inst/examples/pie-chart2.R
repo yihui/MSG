@@ -3,14 +3,14 @@ library(ggplot2)
 library(patchwork)
 pie_sales = data.frame(
   ratio = c(0.12, 0.3, 0.26, 0.16, 0.04, 0.12),
-  name = c("Blueberry", "Cherry", "Apple",
-           "Boston Cream", "Other", "Vanilla Cream"))
+  name = c("蓝莓", "樱桃", "苹果", "波士顿奶油", "其它", "香草奶油"))
 pie_sales = pie_sales[order(-pie_sales$ratio), ]
 pie_sales$name = factor(
   pie_sales$name, levels = pie_sales$name[order(pie_sales$ratio)])
 pie1 = ggplot(pie_sales, aes(x = "", y = ratio, fill = name)) +
   geom_bar(width = 1, stat = "identity", color = "white") +
   coord_polar("y", start = 0) +
+  labs(fill = "口味") +
   theme_void()
 dot1 = ggplot(pie_sales, aes(name, ratio, color = name)) +
   geom_point() +

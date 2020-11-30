@@ -2,8 +2,8 @@
 layout(matrix(c(1, 2, 1, 3), 2)) # 拆分作图区域
 par(mar = c(4, 4, 0.2, 0.2))
 pie.sales = c(0.12, 0.3, 0.26, 0.16, 0.04, 0.12)
-names(pie.sales) = c("Blueberry", "Cherry", "Apple",
-                      "Boston Cream", "Other", "Vanilla Cream")
+names(pie.sales) = c("蓝莓", "樱桃", "苹果",
+                     "波士顿奶油", "其它", "香草奶油")
 pie.col = c("purple", "violetred1", "green3",
              "cornflowerblue", "cyan", "white")
 pie.sales = sort(pie.sales, decreasing = TRUE) # 排序有助于可读性

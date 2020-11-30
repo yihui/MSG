@@ -3,6 +3,6 @@ data(esoph)
 par(mar = c(4, 4, 0.2, 0.2))
 with(esoph, {
   interaction.plot(agegp, alcgp, ncases / (ncases + ncontrols),
-                   trace.label = "alcohol", fixed = TRUE,
-                   xlab = "Age", ylab = "Cancer Proportion")
+                   trace.label = "饮酒量", fixed = TRUE,
+                   xlab = "年龄", ylab = "患癌概率")
 })

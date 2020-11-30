@@ -1,7 +1,7 @@
 # New Haven 地区的年均气温
 xx = c(1912, 1912:1971, 1971)
 yy = c(min(nhtemp), nhtemp, min(nhtemp))
-plot(xx, yy, type = "n", xlab = "Year", ylab = "Temperatures")
+plot(xx, yy, type = "n", xlab = "年份", ylab = "温度")
 for (i in seq(255, 0, -3)) {
   # rgb() 中的绿色成分逐渐变小:
   yy = c(45, nhtemp - (nhtemp - min(nhtemp)) * (1 - i / 255), 45)

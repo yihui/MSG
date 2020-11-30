@@ -6,7 +6,7 @@ x = runif (100, 0, 10)
 y = rnorm(100)
 z = rchisq(100, 2)
 comp = make.groups(x, y, z) # 将三个向量合并到同一数据框中
-bxp0 = bwplot(which ~ data, data = comp, horizontal = TRUE,
+bxp0 = bwplot(which ~ data, data = comp, horizontal = TRUE, xlab = "",
               scales = list(y = list(labels = c("$x$", "$y$","$z$"))))
 print(bxp0)
 trellis.par.set(
