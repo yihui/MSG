@@ -33,5 +33,5 @@ plot(1:10, xlab = "", ylab = "", main = "tcl = 1")
 text(3, 8, "srt = 30", srt = 30, cex = 1.2)
 text(8, 3, "srt = 120", srt = 120, cex = 1.2)
 par(mgp = c(5, 3, 1), mar = c(6, 6, 4, 1), tcl = -.5)
-plot(1:10, xlab = "X title", ylab = "Y title",
+plot(1:10, xlab = "横轴标题", ylab = "纵轴标题",
      main = "mgp = c(5, 3, 1)")

@@ -10,7 +10,7 @@ gg_olsLms = function(df, lqs_xy){
     geom_smooth(aes(color = "OLS"), method = "lm", se = FALSE) +
     geom_line(aes(x = x, y = y1, color = "LMS")) +
     scale_color_manual(
-      name="Model",
+      name="模型",
       values=c(OLS = "red", LMS = "blue")) +
     theme(legend.background = element_blank(),
           legend.position = c(0.1, 0.9))

@@ -4,4 +4,4 @@ library(survival)
 library(survminer)
 leukemia.surv = survfit(Surv(time, status) ~ x, data = aml)
 print(ggsurvplot(leukemia.surv, data = aml, ggtheme = theme_gray()) +
-        labs(x = "时间", y = "生存概率"))
+        labs(x = "时间", y = "生存概率", color = "层"))

@@ -38,7 +38,7 @@ with(CLELAL09, {
                 xlim = c(0, 94), ylim = c(0, 50),
                 asp = 1, xaxs = "i", yaxs = "i", axes = F)
   draw.court()
-  text(0, 25, "CLE", adj = c(0.5, 0), srt = 90)
-  text(94, 25, "LAL", adj = c(0.5, 1), srt = 90)
+  text(0, 25, "骑士", adj = c(0.5, 0), srt = 90)
+  text(94, 25, "湖人", adj = c(0.5, 1), srt = 90)
   points(jitterx, jittery, pch = c(1, 4)[as.integer(result)])
 })

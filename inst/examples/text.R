@@ -3,10 +3,10 @@ par(mar = c(4, 4, 4, 3))
 plot(0:10, type = "n", xlab = "", ylab = "", xlim = c(0, 12))
 grid(col = "gray")
 title(
-  main = "Demonstration of text in R Graphics",
-  xlab = "X-axis title", ylab = "Y-axis title"
+  main = "主标题",
+  xlab = "横轴标题", ylab = "纵轴标题"
 )
-mtext("Here is \"side = 4\"", side = 4, line = 1)
+mtext("这里是 \"side = 4\"", side = 4, line = 1)
 x = c(6, 4, 6, 8)
 y = c(8, 5, 2, 5)
 s = c(0, 90, 180, 270)
