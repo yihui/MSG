@@ -1,5 +1,9 @@
+# CHANGES IN MSG VERSION 0.7
+
+
 # CHANGES IN MSG VERSION 0.6
 
+- Translated English text to Chinese in examples (thanks, @pzhaonet, #39).
 
 # CHANGES IN MSG VERSION 0.5
 

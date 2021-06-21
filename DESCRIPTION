@@ -1,7 +1,7 @@
 Package: MSG
 Type: Package
 Title: Data and Functions for the Book Modern Statistical Graphics
-Version: 0.5.1
+Version: 0.6.0001
 Authors@R: c(
   person("Yihui", "Xie", role = c("aut", "cre"), email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")),
   person("Lijia", "Yu", role = "ctb"),
