@@ -15,7 +15,9 @@
 #' # msg("ChinaPop")
 msg = function(fig = "3.6", show_code = TRUE, print_plot = TRUE, filter = 0){
   graphnr = read.csv(system.file("extdata", "graphnr.csv", package = "MSG"), colClasses = "character")
-  if (substr(fig, 1, 1) %in% 0:9) fig = graphnr$graph[graphnr$nr == fig]
+  if (!is.character(fig)) fig = as.character(fig)
+  if (! fig %in% graphnr$nr) return(message("This figure does not exist. Please double check."))
+  fig = graphnr$graph[graphnr$nr == fig]
   rfile = system.file("examples", paste0(fig, ".R"), package = "MSG")
   if (print_plot) source(rfile, encoding = "UTF-8")
   if (show_code) {

@@ -1,4 +1,4 @@
-# 基础作图法绘制中国政府网站中的百分比数据 LOWESS 图
+# 基础作图法绘制某国政府网站中的百分比数据 LOWESS 图
 data(gov.cn.pct, package = "MSG")
 pct.lowess = function(cond) {
   with(gov.cn.pct, {

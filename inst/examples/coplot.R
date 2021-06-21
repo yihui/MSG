@@ -3,7 +3,7 @@ data(quakes)
 library(maps)
 par(mar = rep(0, 4), mgp = c(2, .5, 0))
 coplot(lat ~ long | depth, data = quakes, number = 4,
-       xlab = "经度", ylab = "纬度",
+       xlab = c("经度", "深度"), ylab = "纬度",
        ylim = c(-45, -10.72), panel = function(x, y, ...) {
          map("world2",
              regions = c("New Zealand", "Fiji"),

@@ -1,4 +1,4 @@
-# ggplot2 绘制中国政府网站中的百分比数据 LOWESS 图
+# ggplot2 绘制某国政府网站中的百分比数据 LOWESS 图
 library(scales)
 library(ggplot2)
 library(patchwork)
@@ -6,7 +6,7 @@ data(gov.cn.pct, package = "MSG")
 p1 = ggplot(gov.cn.pct) +
   geom_line(aes(percentage,count)) +
   labs(x = "百分比", y = "频数")
-p2 = p1 + xlim(c(9.9,11.1))
+p2 = p1  + scale_x_continuous(breaks = seq(10, 11, 0.2), limits = c(9.9, 11.1))
 p3 = ggplot(gov.cn.pct,
              aes(percentage, count, group = round0, color = round0)) +
   geom_point(size = 0.1, alpha = 0.3) +
