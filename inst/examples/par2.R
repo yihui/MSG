@@ -4,7 +4,7 @@ btype = c("l", "7", "c", "u")
 fml = c("serif", "sans", "mono", "symbol")
 for (i in 0:3) {
   plot(1:10,
-       font.main = i + 1, las = i, pch = NA, bty = btype[i + 1],
+       font.main = i + 1, las = i, pch = NA, bty = btype[i + 1], xlab = "",
        main = paste("font.main = ", i + 1, "; las = ", i, "; bty = \"", btype[i + 1], "\"", sep = "")
   )
   if (i < 3) {
