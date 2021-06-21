@@ -1,7 +1,7 @@
 
 gradient = function(x, y, z, main = NULL, ..., FUN = function(x,y) x^2 + 2 * y^2,
                     rg = c(-3, -3, 3, 3), init = c(-3, 3),
-                     gamma = 0.05, tol = 0.001, len = 50, add = FALSE, nmax = 50) {
+                     gamma = 0.05, tol = 0.001, len = 50, add = FALSE, nmax = 50, point_id = NA) {
   if (!add) {
     image(x, y, z, ...)
     grid(nx = length(x), ny = length(y), col = "white", lty = 1)
@@ -22,7 +22,8 @@ gradient = function(x, y, z, main = NULL, ..., FUN = function(x,y) x^2 + 2 * y^2
     gap = abs(FUN(newxy[1], newxy[2]) - FUN(xy[1], xy[2]))
     i = 1
     cl = rgb(runif(1), runif(1), runif(1))
-    points(xy[1], xy[2], pch = 19, col = cl, cex = 1.5)
+    points(xy[1], xy[2], pch = 19, col = cl, cex = 4.5)
+    if (!is.na(point_id)) text(xy[1], xy[2], labels = point_id, col = "white", cex = 1.5)
     cl0 = do.call(rgb, as.list(c(col2rgb(cl) / 255, 0.1)))
     while (gap > tol & i <= nmax) {
       xy = rbind(xy, newxy[i, ])
@@ -69,16 +70,17 @@ gradient(x, y, z,
   tol = 1e-04, nmax = 200, add = FALSE
 )
 tmp0 = tmp1 = NULL
+point_ids <- c(11:1, 20:12)
 for (i in 1:20) {
   tmp = gradient(x, y, z, axes = FALSE, FUN = f2,
                  rg = c(-0.8, -0.8, 0.7, 2), init = c(lc$x[i], lc$y[i]),
                  gamma = runif(1, 0.05, 0.15), tol = 1e-04,
-                 nmax = ceiling(runif(1, 5, 13)), add = TRUE)
+                 nmax = ceiling(runif(1, 5, 13)), add = TRUE, point_id = point_ids[i])
   tmp0 = rbind(tmp0, tmp$root)
   tmp1 = c(tmp1, tmp$color)
 }
 points(tmp0[, 1], tmp0[, 2],
   pch = 19, col = tmp1,
-  cex = 1, lwd = 1
+  cex = 2, lwd = 1
 )
 
