@@ -1,5 +1,6 @@
 # CHANGES IN MSG VERSION 0.7
 
+- Misc updates for the book (#40, #41).
 
 # CHANGES IN MSG VERSION 0.6
 
