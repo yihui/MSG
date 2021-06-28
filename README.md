@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/yihui/MSG.svg)](https://travis-ci.org/yihui/MSG)
+[![R-CMD-check](https://github.com/yihui/MSG/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/yihui/MSG/actions/)
 
 This is an R package for my Chinese book _Modern Statistical Graphics_, which is hosted in the repo <https://github.com/XiangyunHuang/MSG-Book>.
 
