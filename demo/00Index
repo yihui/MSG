@@ -21,5 +21,4 @@ volcano			a filled contour plot of the volcano data
 editRect		edit a rectangle in grid graphics
 subplot			draw a sub-plot on a large plot to represent a local area
 princomp		a demo of PCA based on the rotation of viewport in grid
-eqMaps			maps for the earthquakes in Sichuan
 Napoleon		reproduce the graph by Minard

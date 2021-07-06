@@ -118,9 +118,9 @@ NULL
 NULL
 
 
-#' Percentage data in Chinese government websites
+#' Percentage data in some government websites
 #'
-#' This data was collected from Google by searching for percentages in Chinese
+#' This data was collected from Google by searching for percentages in some
 #' goverment websites.
 #'
 #' We can specify the domain when searching in Google. For this data, we used
@@ -326,14 +326,6 @@ NULL
 NULL
 
 
-#' Country power indicators of China vs America
-#' @name cn_vs_us
-#' @docType data
-#' @references \url{https://www.theguardian.com/news/datablog/2011/jan/19/china-social-media}
-#' @examples data(cn_vs_us)
-NULL
-
-
 #' Top TV earners
 #'
 #' The pay per episode for actors as well as other information.
@@ -393,12 +385,4 @@ NULL
 #' @references \url{http://www.statsci.org/data/general/murcia.html}
 #' @examples data(murcia)
 #' boxplot(sand~site,data=murcia)
-NULL
-
-
-#' Longitude and latitude of earthquakes in the Sichuan Province
-#' @name eq2010
-#' @docType data
-#' @examples data(eq2010)
-#' plot(lat~long,data=eq2010)
 NULL
