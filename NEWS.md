@@ -1,3 +1,6 @@
+# CHANGES IN MSG VERSION 0.9
+
+
 # CHANGES IN MSG VERSION 0.8
 
 - Deleted two datasets `cn_vs_us` and `eq2010` in preparation for the publication of the book (#42).
