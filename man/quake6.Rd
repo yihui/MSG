@@ -11,8 +11,8 @@ greater than 6 since 1973.
 \examples{
 data(quake6)
 library(ggplot2)
-qplot(year, month, data = quake6) + stat_sum(aes(size = ..n..)) + 
-    scale_size(range = c(1, 10))
+qplot(year, month, data = quake6) + stat_sum(aes(size = ..n..)) + scale_size(range = c(1,
+    10))
 }
 \references{
 \url{https://d.cosx.org/d/101510}

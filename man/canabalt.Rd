@@ -11,7 +11,7 @@ The scores of the game Canabalt from Twitter
 library(ggplot2)
 data(canabalt)
 print(qplot(device, score, data = canabalt))
-print(qplot(reorder(death, score, median), score, data = canabalt, geom = "boxplot") + 
+print(qplot(reorder(death, score, median), score, data = canabalt, geom = "boxplot") +
     coord_flip())
 }
 \references{

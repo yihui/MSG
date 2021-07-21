@@ -31,7 +31,7 @@ the class numeric or factor.
 with(iris, plot(Petal.Length, Petal.Width, col = vec2col(Species), pch = 19))
 
 # another palette
-with(iris, plot(Petal.Length, Petal.Width, col = vec2col(Species, name = "Dark2"), 
+with(iris, plot(Petal.Length, Petal.Width, col = vec2col(Species, name = "Dark2"),
     pch = 19))
 
 ## turn numeric values to colors
