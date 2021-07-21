@@ -18,8 +18,8 @@ Export of US and China from 1999 to 2004 in US dollars
 \examples{
 data(Export.USCN)
 par(mar = c(4, 4.5, 1, 4.5))
-plot(1:13, Export.USCN$Export, xlab = "Year / Country", ylab = "US Dollars ($10^16)", 
-    axes = FALSE, type = "h", lwd = 10, col = c(rep(2, 6), NA, rep(4, 6)), lend = 1, 
+plot(1:13, Export.USCN$Export, xlab = "Year / Country", ylab = "US Dollars ($10^16)",
+    axes = FALSE, type = "h", lwd = 10, col = c(rep(2, 6), NA, rep(4, 6)), lend = 1,
     panel.first = grid())
 xlabel = paste(Export.USCN$Year, "\n", Export.USCN$Country)
 xlabel[7] = ""

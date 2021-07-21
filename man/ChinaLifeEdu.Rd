@@ -25,6 +25,6 @@ u = par("usr")
 rect(u[1], u[3], u[2], u[4], col = "antiquewhite", border = "red")
 library(KernSmooth)
 est = bkde2D(x, apply(x, 2, dpik))
-contour(est$x1, est$x2, est$fhat, nlevels = 15, col = "darkgreen", add = TRUE, 
+contour(est$x1, est$x2, est$fhat, nlevels = 15, col = "darkgreen", add = TRUE,
     vfont = c("sans serif", "plain"))
 }

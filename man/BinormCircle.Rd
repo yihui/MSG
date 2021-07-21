@@ -50,7 +50,7 @@ if (interactive() && require("rgl")) {
     rgl.surface(fit$x1, fit$x2, fit$fhat)
     # animation
     M = par3d("userMatrix")
-    play3d(par3dinterp(userMatrix = list(M, rotate3d(M, pi/2, 1, 0, 0), rotate3d(M, 
+    play3d(par3dinterp(userMatrix = list(M, rotate3d(M, pi/2, 1, 0, 0), rotate3d(M,
         pi/2, 0, 1, 0), rotate3d(M, pi, 0, 0, 1))), duration = 20)
 }
 
