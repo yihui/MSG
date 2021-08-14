@@ -23,8 +23,13 @@ msg = function(fig = "3.6", show_code = TRUE, print_plot = TRUE, filter = 0){
     fig = graphnr$graph[graphnr$nr == fig]
   }
   rfile = system.file("examples", paste0(fig, ".R"), package = "MSG")
-  if (print_plot) source(rfile, encoding = "UTF-8")
+  if (print_plot) {
+    opar = par(no.readonly = TRUE)
+    source(rfile, encoding = "UTF-8")
+    par(opar)
+  }
   if (show_code) {
     if (!0 %in% filter) rfile = rfile[filter]
-    cat(readLines(rfile, encoding = "UTF-8"), sep = '\n')}
+    cat(readLines(rfile, encoding = "UTF-8"), sep = '\n')
+  }
 }
