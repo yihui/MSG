@@ -13,7 +13,7 @@
 #' @examples
 #' # msg("3.6")
 #' # msg("ChinaPop")
-msg = function(fig = "3.6", show_code = TRUE, print_plot = TRUE, filter = 0){
+msg = function(fig = "3.6", show_code = TRUE, print_plot = TRUE, filter = 0) {
   graphnr = read.csv(system.file("extdata", "graphnr.csv", package = "MSG"), colClasses = "character")
   if (!is.character(fig)) fig = as.character(fig)
   if (!fig %in% c(graphnr$graph, graphnr$nr)) {
@@ -23,8 +23,13 @@ msg = function(fig = "3.6", show_code = TRUE, print_plot = TRUE, filter = 0){
     fig = graphnr$graph[graphnr$nr == fig]
   }
   rfile = system.file("examples", paste0(fig, ".R"), package = "MSG")
-  if (print_plot) source(rfile, encoding = "UTF-8")
+  if (print_plot) {
+    opar = par(no.readonly = TRUE)
+    on.exit(par(opar), add = TRUE)
+    source(rfile, encoding = "UTF-8")
+  }
   if (show_code) {
     if (!0 %in% filter) rfile = rfile[filter]
-    cat(readLines(rfile, encoding = "UTF-8"), sep = '\n')}
+    cat(readLines(rfile, encoding = "UTF-8"), sep = '\n')
+  }
 }
