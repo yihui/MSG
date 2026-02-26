@@ -1,4 +1,4 @@
-[![R-CMD-check](https://github.com/yihui/MSG/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/yihui/MSG/actions/)
+[![R-CMD-check](https://github.com/yihui/MSG/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/yihui/MSG/actions/)
 
 This is an R package for my Chinese book _Modern Statistical Graphics_, which is hosted in the repo <https://github.com/XiangyunHuang/msg>.
 
@@ -11,7 +11,7 @@ install.packages("MSG")
 或者安装开发版：
 
 ```r
-remotes::install_github("yihui/MSG")
+install.packages("MSG", repos = "https://yihui.r-universe.dev")
 ```
 
 在 R 中加载：
@@ -22,7 +22,7 @@ library("MSG")
 
 这里，我们简要介绍一下它包含的函数和数据。更为详细的信息见帮助文档或《[现代统计图形](https://msg2020.pzhao.org)》一书。
 
-## 函数说明 {#sec:MSG-fun}
+## 函数说明
 
 `andrews_curve()`
 : 根据数据矩阵画调和曲线图。
