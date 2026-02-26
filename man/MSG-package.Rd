@@ -2,13 +2,20 @@
 % Please edit documentation in R/MSG-package.R
 \docType{package}
 \name{MSG-package}
-\alias{MSG-package}
 \alias{MSG}
+\alias{MSG-package}
 \title{Modern Statistical Graphics}
 \description{
 Datasets and functions for the Chinese book ``Modern Statistical Graphics''.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/yihui/MSG}
+  \item Report bugs at \url{https://github.com/yihui/MSG/issues}
+}
+
+}
 \author{
 Yihui Xie <\url{https://yihui.org}>
 }
-\keyword{package}

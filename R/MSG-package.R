@@ -1,13 +1,9 @@
 #' Modern Statistical Graphics
 #'
 #' Datasets and functions for the Chinese book ``Modern Statistical Graphics''.
-#' @name MSG-package
-#' @aliases MSG-package MSG
-#' @docType package
 #' @import graphics
 #' @author Yihui Xie <\url{https://yihui.org}>
-#' @keywords package
-NULL
+'_PACKAGE'
 
 
 #' Random numbers containing a ``circle''
