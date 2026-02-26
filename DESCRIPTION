@@ -1,7 +1,7 @@
 Package: MSG
 Type: Package
 Title: Data and Functions for the Book Modern Statistical Graphics
-Version: 0.8.1
+Version: 0.8.2
 Authors@R: c(
   person("Yihui", "Xie", role = c("aut", "cre"), email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")),
   person("Peng", "Zhao", role = "aut"),
@@ -25,8 +25,9 @@ Suggests:
     plotrix (>= 3.7.6),
     ggplot2 (>= 3.2.1),
     grid (>= 3.6.0),
+    MASS,
     sna (>= 2.4)
 URL: https://github.com/yihui/MSG
 BugReports: https://github.com/yihui/MSG/issues
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.3
