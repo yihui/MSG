@@ -1,6 +1,6 @@
 [![R-CMD-check](https://github.com/yihui/MSG/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/yihui/MSG/actions/)
 
-This is an R package for my Chinese book _Modern Statistical Graphics_, which is hosted in the repo <https://github.com/XiangyunHuang/MSG-Book>.
+This is an R package for my Chinese book _Modern Statistical Graphics_, which is hosted in the repo <https://github.com/XiangyunHuang/msg>.
 
 这是为《[现代统计图形](https://msg2020.pzhao.org)》一书编写的 R 附加包 **MSG**（Modern Statistical Graphics 的缩写）。该包目前已经发布到 CRAN，所以读者可以用以下方式直接安装：
 
