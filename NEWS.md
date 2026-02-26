@@ -1,3 +1,5 @@
+# CHANGES IN MSG VERSION 0.10
+
 # CHANGES IN MSG VERSION 0.9
 
 - Added a suggested dependency to DESCRIPTION per CRAN's request.
